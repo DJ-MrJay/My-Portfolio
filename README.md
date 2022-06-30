@@ -1,5 +1,5 @@
 # My-Portfolio
-About me and what I do
+This is a page about me and what I do.
 
 ## Built With
 
@@ -19,6 +19,6 @@ Contributions and feature requests are welcome!
 
 Give ⭐️⭐️⭐️⭐️⭐️ if you like this project!
 
-## 📝 License
+## License
 
 This project is [MIT](./MIT.md) licensed.
