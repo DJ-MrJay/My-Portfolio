@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+    background: #00d9ff;
+    height: 50px;
+    max-width: 375px;
+}
+
+.wrapper {
+    max-width: 327px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 700;
+}
+
+nav .mobile-menu {
+    font-size: 25px;
+}
+
+.header-container-mobile {
+    position: absolute;
+    width: 375px;
+    height: 100vh;
+    left: 0px;
+    top: 50px;
+    background: #61f368;
+    
+}
+
+sheader {
+    display: flex;
+    align-items: center;
+}
