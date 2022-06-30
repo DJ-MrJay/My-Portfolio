@@ -1,63 +1,80 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-    color: #172B4D;
-    font-size: 16px;
-    
+.container {
+  position: absolute;
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(255, 255, 255) url("images/header-shapes\ mobile.svg") no-repeat;
 }
 
-.nav-container {
-    background: #ffffff;
-    height: 50px;
-    max-width: 375px;
-}
-
-.wrapper {
-    max-width: 327px;
-    margin: 0 auto;
+header {
+  background: rgb(255, 255, 255);
+  max-width: 375px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 24px;
 }
 
-nav .logo {
-    font-family: 'Montserrat';
-    font-size: 25px;
-    font-weight: 900;
-    color: #6070FF;
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
 }
 
-nav .mobile-menu {
-    font-size: 25px;
-    color: #6070FF;
+.mobile-menu {
+  font-size: 20px;
+  color: #6070ff;
 }
 
-.header-container-mobile {
-    position: absolute;
-    width: 375px;
-    height: 718px;
-    left: 0;
-    top: 50px;
-    background: #fff url("images/header-shapes\ mobile.svg");
+main {
+  margin: 120px 24px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
 }
 
-.intro a {
-    font-style: normal;
-    font-weight: 500;
-    color: #7F8CFF;
+.headline {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 }
 
-.social-icons {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    column-gap: 10px;
-    margin-top: 20px;
+.body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.social-media {
+  font-size: 16px;
+  line-height: 150%;
+  color: #7f8cff;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  column-gap: 10px;
+  font-size: 25px;
+  padding: 0;
+}
+
+.social-media ul a {
+  color: #344563;
 }
