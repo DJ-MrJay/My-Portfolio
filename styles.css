@@ -5,10 +5,13 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    color: #172B4D;
+    font-size: 16px;
+    
 }
 
 .nav-container {
-    background: #00d9ff;
+    background: #ffffff;
     height: 50px;
     max-width: 375px;
 }
@@ -27,24 +30,34 @@ nav {
 nav .logo {
     font-family: 'Montserrat';
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 900;
+    color: #6070FF;
 }
 
 nav .mobile-menu {
     font-size: 25px;
+    color: #6070FF;
 }
 
 .header-container-mobile {
     position: absolute;
     width: 375px;
-    height: 100vh;
-    left: 0px;
+    height: 718px;
+    left: 0;
     top: 50px;
-    background: #61f368;
-    
+    background: #fff url("images/header-shapes\ mobile.svg");
 }
 
-sheader {
+.intro a {
+    font-style: normal;
+    font-weight: 500;
+    color: #7F8CFF;
+}
+
+.social-icons {
     display: flex;
     align-items: center;
+    font-size: 25px;
+    column-gap: 10px;
+    margin-top: 20px;
 }
