@@ -12,6 +12,7 @@
   top: 0;
   margin-top: 68px;
   font-family: 'Poppins', sans-serif;
+  color: #344563;
   background: rgb(255, 255, 255) url("images/header-shapes\ mobile.svg") no-repeat;
 }
 
@@ -83,4 +84,79 @@ main {
 
 .social-media ul a {
   color: #344563;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 16px;
+  gap: 18px;
+  width: 327px;
+  background: #ffffff;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+}
+
+.snapshot {
+  width: 295px;
+  height: 220px;
+  background: url(images/snapshoot-portfolio-1.svg);
+  border-radius: 8px;
+}
+
+.project-title {
+  width: 295px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.flex-container-tonic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #7A869A;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #C1C7D0;
+}
+
+.categories ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  padding: 0px;
+}
+
+.categories li {
+  background: #EBEBFF;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #6070FF
+}
+
+button {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 17px;
+  color: #396DF2;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  width: 124px;
+  height: 48px;
+  background-color: transparent;
 }
