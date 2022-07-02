@@ -10,13 +10,12 @@
   font-family: 'Poppins', sans-serif;
   color: #344563;
   background: #e5e5e5 url(images/header-white-back-shapes.svg) left top no-repeat;
- }
+}
 
 header {
   background: rgb(255, 255, 255);
   max-width: 375px;
   height: 48px;
-  
 }
 
 nav {
@@ -48,14 +47,14 @@ nav a {
   margin: 90px 24px 0 24px;
 }
 
-.about-body{
+.about-body {
   display: flex;
   flex-direction: column;
   align-items: left;
   gap: 18px;
 }
-  
-  .card {
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -69,8 +68,8 @@ nav a {
 }
 
 .about {
-  margin: 100px 0px 0px 0px;
-  padding: 114px 24px 0px 24px;
+  margin: 100px 0 0 0;
+  padding: 114px 24px 0 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -83,6 +82,20 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .body {
@@ -152,13 +165,6 @@ h1 {
   border-radius: 8px;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
-}
-
 .flex-container-tonic {
   display: flex;
   flex-direction: row;
@@ -209,8 +215,19 @@ button {
 }
 
 button:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: #396df2;
+}
+
+button:active {
+  color: #fff;
+  background-color: #172b4d;
+}
+
+button:disabled {
+  color: #c1c7d0;
+  border: 1px solid #c1c7d0;
+  background-color: transparent;
 }
 
 .mygrid {
@@ -227,7 +244,7 @@ button:hover {
   align-items: center;
   list-style: none;
   padding: 0;
-  border-bottom: #DFE1E6 1px solid;
+  border-bottom: #dfe1e6 1px solid;
 }
 
 .canopy {
