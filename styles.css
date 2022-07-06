@@ -8,6 +8,8 @@
   font-family: "Poppins", sans-serif;
   color: #344563;
   background: #e5e5e5;
+  padding: 0 24px;
+  margin: auto;
 }
 
 h1 {
@@ -40,7 +42,6 @@ nav {
   display: flex;
   align-items:center;
   justify-content:space-between;
-  margin: 0 24px;
   padding: 12px 0;
 }
 
@@ -66,7 +67,7 @@ nav a {
   flex-wrap: wrap;
   align-items: left;
   gap: 18px;
-  margin-top: -50px;
+  margin: -50px -24px 0 -24px;
   padding: 150px 24px 130px 24px;
   background: #e5e5e5 url(images/header-white-back-shapes.svg) no-repeat;
   background-size: cover;
@@ -90,21 +91,8 @@ nav a {
   text-decoration: none;
 }
 
-/* .card {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 16px;
-  gap: 18px;
-  width: 327px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  margin: 100px 24px 0 24px;
-} */
-
 .about {
-  margin: 100px 0 0 0;
+  margin: 100px -24px 0 -24px;
   padding: 114px 24px 45px 24px;
   display: flex;
   flex-wrap: wrap;
@@ -140,47 +128,55 @@ nav a {
   color: #344563;
 }
 
-/* .works {
-  display: flex;
-  flex-direction: column;
+.card {
+  display: grid;
+  row-gap: 18px;
   align-items: left;
   padding: 16px;
-  gap: 18px;
-  width: 327px;
+  width: 100%;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
-} */
+  border-radius: 24px;
+  margin: 100px 0 0;
+}
+
+.three, .five, .seven {
+  display: none;
+}
 
 .snapshot {
-  width: 295px;
   height: 220px;
-  background: url(images/snapshoot-portfolio-1.svg);
+  background: url(images/snapshoot-portfolio-1.svg) no-repeat;
   border-radius: 8px;
+  background-size: contain;
 }
 
 .snapshot2 {
-  width: 295px;
   height: 220px;
-  background: url(images/snapshoot-portfolio-2.svg);
+  background: url(images/snapshoot-portfolio-2.svg) no-repeat;
   border-radius: 8px;
 }
 
 .snapshot3 {
-  width: 295px;
   height: 220px;
-  background: url(images/snapshoot-portfolio-3.svg);
+  background: url(images/snapshoot-portfolio-3.svg) no-repeat;
   border-radius: 8px;
 }
 
 .snapshot4 {
-  width: 295px;
   height: 220px;
-  background: url(images/snapshoot-portfolio-4.svg);
+  background: url(images/snapshoot-portfolio-4.svg) no-repeat;
   border-radius: 8px;
 }
 
-.flex-container-tonic {
+.snapshot-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.flex-breadcrumbs {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -263,7 +259,7 @@ button:disabled {
   color: white;
   background: url(images/contact-me-back.svg) no-repeat;
   background-size: cover;
-  margin: -100px 0 0 0;
+  margin: -100px -24px 0 -24px;
   padding: 114px 24px 0 24px;
   display: flex;
   flex-direction: column;
@@ -368,6 +364,7 @@ s.fields {
   .container {
     max-width: 1440px;
     padding: 0 142px 0 142px;
+    margin: auto;
   }
 
   header {
@@ -452,6 +449,35 @@ s.fields {
     background-size: cover;
   }
   
+  .snapshot2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: url(images/snapshoot-portfolio-6.svg) no-repeat;
+    border-radius: 8px;
+    background-size: cover;
+    order: 1;
+  }
+  
+  .snapshot3 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: url(images/snapshoot-portfolio-7.svg) no-repeat;
+    border-radius: 8px;
+    background-size: cover;
+  }
+  
+  .snapshot4 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: url(images/snapshoot-portfolio-8.svg) no-repeat;
+    border-radius: 8px;
+    background-size: cover;
+    order: 1;
+  }
+  
   .snapshot-text {
     display: flex;
     flex-direction: column;
@@ -464,72 +490,8 @@ s.fields {
     font-size: 18px;
     line-height: 24px;
   }
-
-  .snapshot2 {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background: url(images/snapshoot-portfolio-6.svg) no-repeat;
-    border-radius: 8px;
-    background-size: cover;
-  }
   
-  .snapshot2-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-    padding: 24px;
-    order: -1;
+  .two, .four, .six {
+    display: none;
   }
-
-  .snapshot2-text h3 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .snapshot3 {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background: url(images/snapshoot-portfolio-7.svg) no-repeat;
-    border-radius: 8px;
-    background-size: cover;
-  }
-  
-  .snapshot3-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-    padding: 24px;
-  }
-
-  .snapshot3-text h3 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .snapshot4 {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background: url(images/snapshoot-portfolio-8.svg) no-repeat;
-    border-radius: 8px;
-    background-size: cover;
-  }
-  
-  .snapshot4-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-    padding: 24px;
-    order: -1;
-  }
-
-  .snapshot4-text h3 {
-    font-size: 18px;
-    line-height: 24px;
-  }  
 }
