@@ -342,3 +342,13 @@ s.fields {
   flex-direction: column;
   gap: 50px;
 }
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  
+    
+}
