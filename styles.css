@@ -38,8 +38,8 @@ header {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items:center;
+  justify-content:space-between;
   margin: 0 24px;
   padding: 12px 0;
 }
@@ -58,7 +58,8 @@ nav a {
 
 .home {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   align-items: left;
   gap: 18px;
   margin-top: -50px;
@@ -69,7 +70,8 @@ nav a {
 
 .about-body {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   align-items: left;
   gap: 18px;
 }
@@ -345,10 +347,47 @@ s.fields {
 
 /* Desktop version */
 @media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
   .container {
     max-width: 1440px;
   }
 
-  
+  header {
+    background: rgb(255, 255, 255);
+    max-width: 1440px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  nav li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+    padding: 0;
+  }
     
 }
