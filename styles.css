@@ -8,6 +8,8 @@
   font-family: "Poppins", sans-serif;
   color: #344563;
   background: #e5e5e5;
+  padding: 0 24px;
+  margin: auto;
 }
 
 h1 {
@@ -40,7 +42,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 24px;
   padding: 12px 0;
 }
 
@@ -56,12 +57,17 @@ nav a {
   line-height: 20px;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 .home {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: left;
   gap: 18px;
-  margin-top: -50px;
+  margin: -50px -24px 0 -24px;
   padding: 150px 24px 130px 24px;
   background: #e5e5e5 url(images/header-white-back-shapes.svg) no-repeat;
   background-size: cover;
@@ -69,32 +75,35 @@ nav a {
 
 .about-body {
   display: flex;
-  flex-direction: column;
+
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   align-items: left;
   gap: 18px;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 16px;
-  gap: 18px;
-  width: 327px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  margin: 100px 24px 0 24px;
+.connect a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
 }
 
 .about {
-  margin: 100px 0 0 0;
+  margin: 100px -24px 0 -24px;
   padding: 114px 24px 45px 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   background: url(images/white-back-inverted.svg) no-repeat;
   background-size: cover;
+}
+
+.about-skills-desktop {
+  display: none;
 }
 
 .body {
@@ -124,49 +133,42 @@ nav a {
   color: #344563;
 }
 
-/* .works {
-  display: flex;
-  flex-direction: column;
+.card {
+  display: grid;
+  row-gap: 18px;
   align-items: left;
   padding: 16px;
-  gap: 18px;
-  width: 327px;
+  width: 100%;
   background: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
-} */
-
-.snapshot {
-  width: 295px;
-  height: 220px;
-  background: url(images/snapshoot-portfolio-1.svg);
-  border-radius: 8px;
+  border-radius: 24px;
+  margin: 100px 0 0;
 }
 
-.snapshot2 {
-  width: 295px;
-  height: 220px;
-  background: url(images/snapshoot-portfolio-2.svg);
-  border-radius: 8px;
+.two,
+.four,
+.six,
+.eight {
+  display: none;
 }
 
-.snapshot3 {
-  width: 295px;
-  height: 220px;
-  background: url(images/snapshoot-portfolio-3.svg);
-  border-radius: 8px;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.snapshot4 {
-  width: 295px;
-  height: 220px;
-  background: url(images/snapshoot-portfolio-4.svg);
-  border-radius: 8px;
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 18px;
 }
 
-.flex-container-tonic {
+.flex-breadcrumbs {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   font-size: 13px;
@@ -185,6 +187,7 @@ nav a {
 .categories ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   gap: 10px;
@@ -247,13 +250,11 @@ button:disabled {
   color: white;
   background: url(images/contact-me-back.svg) no-repeat;
   background-size: cover;
-  margin: -100px 0 0 0;
+  margin: -100px -24px 0 -24px;
   padding: 114px 24px 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* gap: 20px; */
 }
 
 .form h1 {
@@ -341,4 +342,171 @@ s.fields {
   display: inline-flex;
   flex-direction: column;
   gap: 50px;
+}
+
+/* ================================Desktop version================================= */
+@media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 0 142px 0 142px;
+    margin: auto;
+  }
+
+  header {
+    max-width: 1440px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .desktop-menu a {
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0 260px;
+    background: #e5e5e5 url(images/header-bg-desktop.svg) no-repeat;
+    background-size: cover;
+    margin: -44px -142px 0 -142px;
+    height: 916px;
+  }
+
+  .home p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .social-media {
+    float: left;
+  }
+
+  .social-media li {
+    margin-right: 8px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 24px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+    margin: 142px 0 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 24px;
+  }
+
+  .card-text h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .one,
+  .three,
+  .five,
+  .seven {
+    display: none;
+  }
+
+  .about {
+    margin: 142px -142px 0 -142px;
+    padding: 142px 142px 300px 142px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 24px;
+    background: url(images/about-background-desktop.svg) no-repeat;
+    background-size: cover;
+  }
+
+  .about-skills-desktop {
+    display: block;
+  }
+
+  .about-skills-desktop ul {
+    list-style: none;
+  }
+
+  .about-skills {
+    display: none;
+  }
+
+  .form {
+    text-align: center;
+    color: white;
+    background: url(images/contact-form-background-shape-desktop.svg) no-repeat;
+    background-size: cover;
+    margin: -150px -142px 0 -142px;
+    padding: 142px 0 100px 0;
+  }
+
+  .form-container {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  input[id="fname"],
+  select {
+    max-width: 447px;
+    border-radius: 2px;
+  }
+
+  input[type="email"],
+  select {
+    max-width: 447px;
+    border-radius: 2px;
+  }
+
+  textarea[id="msg"],
+  select {
+    max-width: 447px;
+    border-radius: 2px;
+  }
+
+  input[type="submit"] {
+    float: none;
+  }
 }
