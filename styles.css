@@ -85,7 +85,7 @@ nav a {
 }
 
 .connect a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -516,5 +516,10 @@ s.fields {
 
   input[type="submit"] {
     float: none;
+  }
+
+  .logo {
+    transition-duration: 1s;
+    transform: rotate(360deg);
   }
 }
