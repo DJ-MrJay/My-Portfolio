@@ -221,6 +221,11 @@ button:hover {
   background-color: #396df2;
 }
 
+button:focus {
+  color: #fff;
+  background-color: #396df2;
+}
+
 button:active {
   color: #fff;
   background-color: #172b4d;
