@@ -135,6 +135,15 @@ nav a {
   color: #344563;
 }
 
+.fa-twitter:hover,
+.fa-facebook:hover,
+.fa-linkedin-in:hover,
+.fa-github:hover,
+.fa-youtube:hover {
+  transform: scale(1.2);
+  transition: all .3s ease-in-out;
+}
+
 .card {
   display: grid;
   row-gap: 18px;
