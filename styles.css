@@ -145,41 +145,20 @@ nav a {
   margin: 100px 0 0;
 }
 
-.three,
-.five,
-.seven {
+.two,
+.four,
+.six,
+.eight {
   display: none;
 }
 
-.snapshot {
-  height: 220px;
-  background: url(images/snapshoot-portfolio-1.svg) no-repeat;
-  border-radius: 8px;
-  background-size: contain;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.snapshot2 {
-  height: 220px;
-  background: url(images/snapshoot-portfolio-2.svg) no-repeat;
-  border-radius: 8px;
-  background-size: contain;
-}
-
-.snapshot3 {
-  height: 220px;
-  background: url(images/snapshoot-portfolio-3.svg) no-repeat;
-  border-radius: 8px;
-  background-size: contain;
-}
-
-.snapshot4 {
-  height: 220px;
-  background: url(images/snapshoot-portfolio-4.svg) no-repeat;
-  border-radius: 8px;
-  background-size: contain;
-}
-
-.snapshot-text {
+.card-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -365,7 +344,7 @@ s.fields {
   gap: 50px;
 }
 
-/* Desktop version */
+/* ================================Desktop version================================= */
 @media (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -390,14 +369,6 @@ s.fields {
     flex-direction: row;
     align-items: center;
   }
-
-  /* nav li {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  } */
 
   nav ul {
     display: flex;
@@ -446,48 +417,19 @@ s.fields {
     grid-template-rows: 1fr;
     column-gap: 24px;
     padding: 24px;
-    min-height: 500px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     margin: 142px 0 0;
   }
 
-  .snapshot {
+  img {
     width: 100%;
-    height: auto;
-    background: url(images/snapshoot-portfolio-5.svg) no-repeat;
-    border-radius: 8px;
-    background-size: contain;
+    height: 100%;
+    object-fit: contain;
   }
 
-  .snapshot2 {
-    width: 100%;
-    height: auto;
-    background: url(images/snapshoot-portfolio-6.svg) no-repeat;
-    border-radius: 8px;
-    background-size: contain;
-    order: 1;
-  }
-
-  .snapshot3 {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background: url(images/snapshoot-portfolio-7.svg) no-repeat;
-    background-size: contain;
-  }
-
-  .snapshot4 {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background: url(images/snapshoot-portfolio-8.svg) no-repeat;
-    background-size: contain;
-    order: 1;
-  }
-
-  .snapshot-text {
+  .card-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -495,14 +437,15 @@ s.fields {
     padding: 24px;
   }
 
-  .snapshot-text h3 {
+  .card-text h3 {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .two,
-  .four,
-  .six {
+  .one,
+  .three,
+  .five,
+  .seven {
     display: none;
   }
 
@@ -518,6 +461,10 @@ s.fields {
 
   .about-skills-desktop {
     display: block;
+  }
+
+  .about-skills-desktop ul {
+    list-style: none;
   }
 
   .about-skills {
