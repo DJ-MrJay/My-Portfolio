@@ -13,8 +13,12 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
 }
 
 h1 {
@@ -67,6 +71,29 @@ nav a {
 
 .desktop-menu {
   display: none;
+}
+
+.description p {
+  animation: slide-left 1s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 30%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
 }
 
 .home {
