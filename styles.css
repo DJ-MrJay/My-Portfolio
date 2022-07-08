@@ -12,11 +12,17 @@
   margin: auto;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  animation: fadeIn 3s;
 }
 
 h2 {
@@ -52,11 +58,11 @@ nav a {
 
 .logo {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 20px;
-  transition-duration: 1s;
   transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .desktop-menu {
@@ -529,10 +535,5 @@ s.fields {
 
   input[type="submit"] {
     float: none;
-  }
-
-  .logo {
-    transition-duration: 1s;
-    transform: rotate(360deg);
   }
 }
