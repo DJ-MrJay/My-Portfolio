@@ -57,6 +57,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
+  background-color: transparent;
 }
 
 nav a {
@@ -114,8 +115,6 @@ nav a {
 
 .about-body {
   display: flex;
-
-  /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: left;
   gap: 18px;
