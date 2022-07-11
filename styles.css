@@ -33,6 +33,20 @@ h3 {
   color: #7a869a;
 }
 
+h1,
+h2 {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
 header {
   background: rgb(255, 255, 255);
   max-width: 375px;
@@ -43,6 +57,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
+  background-color: transparent;
 }
 
 nav a {
@@ -52,13 +67,38 @@ nav a {
 
 .logo {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 20px;
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .desktop-menu {
   display: none;
+}
+
+.description p {
+  animation: slide-left 1s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 30%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
 }
 
 .home {
@@ -67,7 +107,7 @@ nav a {
   flex-wrap: wrap;
   align-items: left;
   gap: 18px;
-  margin: -50px -24px 0 -24px;
+  margin: -48px -24px 0 -24px;
   padding: 150px 24px 130px 24px;
   background: #e5e5e5 url(images/header-white-back-shapes.svg) no-repeat;
   background-size: cover;
@@ -75,15 +115,13 @@ nav a {
 
 .about-body {
   display: flex;
-
-  /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: left;
   gap: 18px;
 }
 
 .connect a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -133,6 +171,15 @@ nav a {
   color: #344563;
 }
 
+.fa-twitter:hover,
+.fa-facebook:hover,
+.fa-linkedin-in:hover,
+.fa-github:hover,
+.fa-youtube:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
 .card {
   display: grid;
   row-gap: 18px;
@@ -156,6 +203,15 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+img:hover {
+  transform: scale(0.95);
+  transition-duration: 0.4s;
+}
+
+.skip {
+  transform: none !important;
 }
 
 .card-text {
@@ -216,7 +272,8 @@ button {
   transition-duration: 0.4s;
 }
 
-button:hover {
+button:hover,
+button:focus {
   color: #fff;
   background-color: #396df2;
 }
@@ -397,7 +454,7 @@ s.fields {
     padding: 0 260px;
     background: #e5e5e5 url(images/header-bg-desktop.svg) no-repeat;
     background-size: cover;
-    margin: -44px -142px 0 -142px;
+    margin: -48px -142px 0 -142px;
     height: 916px;
   }
 
