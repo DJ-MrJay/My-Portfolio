@@ -39,11 +39,12 @@ h2 {
 }
 
 @keyframes fadeIn {
-  0% { 
-    opacity: 0; 
+  0% {
+    opacity: 0;
   }
-  100% { 
-    opacity: 1; 
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -85,7 +86,7 @@ nav a {
 @keyframes slide-left {
   from {
     margin-left: 30%;
-    width: 100%; 
+    width: 100%;
   }
 
   to {
@@ -93,11 +94,12 @@ nav a {
     width: 100%;
   }
 
-  0% { 
-    opacity: 0; 
+  0% {
+    opacity: 0;
   }
-  100% { 
-    opacity: 1; 
+
+  100% {
+    opacity: 1;
   }
 }
 
