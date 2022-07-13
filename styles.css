@@ -468,6 +468,12 @@ input[type="submit"]:hover {
     color: #344563;
   }
 
+  .desktop-menu a:hover,
+  .desktop-menu a:focus {
+    font-weight: 600;
+    color: #6070ff;
+  }
+
   .home {
     display: flex;
     flex-flow: column;
