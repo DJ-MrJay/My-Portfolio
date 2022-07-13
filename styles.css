@@ -308,25 +308,21 @@ button:disabled {
   padding: 0;
 }
 
-.accordion {
+.accordion-item {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 0.8rem;
-}
-
-.accordion ul {
-  padding-inline-start: 0;
-}
-
-.accordion li {
+  flex-direction: row;
   background: #f7f7f9;
   border-radius: 8px;
-  margin-bottom: 0.8rem;
+  margin: 0 -42px 12px 0;
   padding: 12px 0 6px 12px;
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+.accordion-btn ul {
+  width: 100%;
+  padding-inline-start: 0;
 }
 
 .accordion-btn > div {
@@ -349,9 +345,7 @@ button:disabled {
   font-weight: 500;
 }
 
-.separator {
-  height: 1px;
-  background: #dfe1e6;
+hr {
   margin: 0 -12px 0 -12px;
 }
 
@@ -381,8 +375,7 @@ button:disabled {
   margin-bottom: 20px;
 }
 
-input[id="fname"],
-select {
+input {
   width: 100%;
   height: 48px;
   padding: 15px 16px;
@@ -398,25 +391,7 @@ select {
   line-height: 20px;
 }
 
-input[type="email"],
-select {
-  width: 100%;
-  height: 48px;
-  padding: 15px 16px;
-  margin: 10px 0;
-  display: inline-block;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-}
-
-textarea[id="msg"],
-select {
+textarea {
   width: 100%;
   height: 170px;
   padding: 15px 16px;
@@ -569,17 +544,18 @@ input[type="submit"]:hover {
   }
 
   .accordion ul {
-    padding-inline-start: 0;
     display: flex;
+    flex-direction: row;
+    gap: 12px;
   }
 
-  .accordion li {
+  .accordion-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 0.8rem;
     min-width: 122px;
     min-height: 120px;
+    margin-right: 0;
   }
 
   .form {
@@ -599,20 +575,17 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
   }
 
-  input[id="fname"],
-  select {
+  input {
     max-width: 447px;
     border-radius: 2px;
   }
 
-  input[type="email"],
-  select {
+  input {
     max-width: 447px;
     border-radius: 2px;
   }
 
-  textarea[id="msg"],
-  select {
+  textarea {
     max-width: 447px;
     border-radius: 2px;
   }
