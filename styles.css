@@ -284,7 +284,7 @@ button:disabled {
   flex-wrap: wrap;
   align-items: left;
   gap: 48px;
-  margin: 100px -24px 0px -24px;
+  margin: 100px -24px 0 -24px;
   padding: 114px 24px 190px 24px;
   background: url(images/white-back-inverted.svg) no-repeat;
   background-size: cover;
@@ -302,7 +302,7 @@ button:disabled {
   padding: 0 12px;
 }
 
-.about-skills>ul {
+.about-skills > ul {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -320,7 +320,7 @@ button:disabled {
 }
 
 .accordion li {
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 0.8rem;
   padding: 12px 0 6px 12px;
@@ -329,7 +329,7 @@ button:disabled {
   gap: 0.8rem;
 }
 
-.accordion-btn>div {
+.accordion-btn > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -342,7 +342,7 @@ button:disabled {
   margin: 0;
 }
 
-.accordion-btn>div>h3 {
+.accordion-btn > div > h3 {
   font-size: 20px;
   line-height: 1.2;
   color: #344563;
@@ -351,7 +351,7 @@ button:disabled {
 
 .separator {
   height: 1px;
-  background: #DFE1E6;
+  background: #dfe1e6;
   margin: 0 -12px 0 -12px;
 }
 
@@ -398,12 +398,13 @@ select {
   line-height: 20px;
 }
 
-textarea[id="msg"],
+input[type="email"],
 select {
   width: 100%;
-  height: 170px;
+  height: 48px;
   padding: 15px 16px;
   margin: 10px 0;
+  display: inline-block;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -414,10 +415,10 @@ select {
   line-height: 20px;
 }
 
-input[type="email"],
+textarea[id="msg"],
 select {
   width: 100%;
-  height: 48px;
+  height: 170px;
   padding: 15px 16px;
   margin: 10px 0;
   border: 1px solid #cfd8dc;
@@ -450,12 +451,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #cfd8dc;
-}
-
-s.fields {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 50px;
 }
 
 /* ================================Desktop version================================= */
