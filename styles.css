@@ -76,7 +76,6 @@ nav a {
 .mobile-menu {
   cursor: pointer;
   z-index: 100;
-  
 }
 
 .desktop-menu {
@@ -85,7 +84,7 @@ nav a {
 
 .close-icon {
   display: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .menu {
@@ -109,7 +108,7 @@ nav a {
 }
 
 .menu a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .showMenu {
