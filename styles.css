@@ -74,11 +74,24 @@ nav a {
 }
 
 .mobile menu {
-  font-size: 50px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+}
+
+.closeIcon {
+  display: none;
 }
 
 .desktop-menu {
-  display: none;
+  /* position: fixed; */
+  transform: translateY(-100%);
+  /* transition: transform 0.2s; */
+  z-index: 99;
+}
+
+.showMenu {
+  transform: translateY(0);
 }
 
 .description p {
@@ -443,7 +456,12 @@ input[type="submit"]:hover {
     display: none;
   }
 
+  .menu {
+    display: none;
+  }
+
   .desktop-menu {
+    transform: translateY(0);
     display: flex;
     flex-direction: row;
     align-items: center;
