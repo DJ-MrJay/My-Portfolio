@@ -1,14 +1,14 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-  max-width: 375px;
-  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
   color: #344563;
   background: #e5e5e5;
-  padding: 0 24px;
   margin: auto;
 }
 
@@ -54,14 +54,14 @@ h2 {
 
 header {
   background: rgb(255, 255, 255);
-  max-width: 375px;
+  width: 100%;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
+  padding: 1% 7%;
   background-color: transparent;
 }
 
@@ -71,10 +71,7 @@ nav a {
 }
 
 .logo {
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 20px;
+  height: 50px;
   transform: rotate(360deg);
   transition-duration: 1s;
 }
@@ -110,10 +107,13 @@ nav a {
 .home {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: left;
-  gap: 18px;
-  margin: -48px -24px 0 -24px;
-  padding: 150px 24px 130px 24px;
+  gap: 1.1rem;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 30%;
+  padding-bottom: 30%;
   background: #e5e5e5 url(images/header-white-back-shapes.svg) no-repeat;
   background-size: cover;
 }
@@ -166,14 +166,15 @@ nav a {
 
 .card {
   display: grid;
-  row-gap: 18px;
+  row-gap: 1.1rem;
   align-items: left;
-  padding: 16px;
-  width: 100%;
+  padding: 1rem;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 24px;
-  margin: 100px 0 0;
+  margin-top: 20%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .two,
@@ -283,9 +284,12 @@ button:disabled {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: left;
-  gap: 48px;
-  margin: 100px -24px 0 -24px;
-  padding: 114px 24px 190px 24px;
+  gap: 3rem;
+  margin-top: 20%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 30%;
+  padding-bottom: 60%;
   background: url(images/white-back-inverted.svg) no-repeat;
   background-size: cover;
 }
@@ -353,15 +357,18 @@ hr {
 }
 
 .form {
-  text-align: center;
-  color: white;
-  background: url(images/contact-me-back.svg) no-repeat;
-  background-size: cover;
-  margin: -80px -24px 0 -24px;
-  padding: 114px 24px 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: -30%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 30%;
+  padding-bottom: 10%;
+  background: url(images/contact-me-back.svg) no-repeat;
+  background-size: cover;
 }
 
 .form h1 {
@@ -411,7 +418,6 @@ input[type="submit"] {
   height: 48px;
   color: #6070ff;
   padding: 12px 16px;
-  margin: 10px 0 40px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -428,19 +434,10 @@ input[type="submit"]:hover {
 }
 
 /* ================================Desktop version================================= */
+
 @media (min-width: 768px) {
   * {
     box-sizing: border-box;
-  }
-
-  .container {
-    max-width: 1440px;
-    padding: 0 142px 0 142px;
-    margin: auto;
-  }
-
-  header {
-    max-width: 1440px;
   }
 
   .mobile-menu {
@@ -476,13 +473,16 @@ input[type="submit"]:hover {
 
   .home {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
-    padding: 0 260px;
+    align-items: left;
+    gap: 1.1rem;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     background: #e5e5e5 url(images/header-bg-desktop.svg) no-repeat;
     background-size: cover;
-    margin: -48px -142px 0 -142px;
-    height: 916px;
   }
 
   .home p {
@@ -509,7 +509,7 @@ input[type="submit"]:hover {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
-    margin: 142px 0 0;
+    margin-top: 8%;
   }
 
   img {
@@ -539,11 +539,14 @@ input[type="submit"]:hover {
   }
 
   .about {
-    margin: 142px -142px 0 -142px;
-    padding: 142px 142px 300px 142px;
+    margin-top: 20%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10%;
+    padding-bottom: 25%;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    column-gap: 25px;
+    grid-template-columns: 1.5fr 2.5fr;
+    column-gap: 3rem;
     background: url(images/about-background-desktop.svg) no-repeat;
     background-size: cover;
   }
@@ -566,10 +569,10 @@ input[type="submit"]:hover {
   .form {
     text-align: center;
     color: white;
+    margin-top: -15%;
+    padding: 10% 0;
     background: url(images/contact-form-background-shape-desktop.svg) no-repeat;
     background-size: cover;
-    margin: -150px -142px 0 -142px;
-    padding: 142px 0 100px 0;
   }
 
   .form-container {
