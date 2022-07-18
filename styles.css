@@ -73,6 +73,10 @@ nav a {
   transition-duration: 1s;
 }
 
+.mobile menu {
+  font-size: 50px;
+}
+
 .desktop-menu {
   display: none;
 }
