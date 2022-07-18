@@ -1,22 +1,22 @@
-let menu = document.querySelector('.desktop-menu');
-let menuItems = document.querySelectorAll('.menuItem');
-let hamburger = document.querySelector('.mobile-menu');
-let menuIcon = document.querySelector('.menuIcon');
-let closeIcon = document.querySelector('.closeIcon');
+let menu = document.querySelector(".menu");
+let menuItem = document.querySelectorAll(".menu-item");
+let mobileMenu = document.querySelector(".mobile-menu");
+let menuIcon = document.querySelector(".menu-icon");
+let closeIcon = document.querySelector(".close-icon");
 
-function mobileMenu() {
-    if (menu.classList.contains("show-menu")){
-        menu.classList.remove("show-menu");
+function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
         closeIcon.style.display = "none";
         menuIcon.style.display = "block";
     } else {
-        menu.classList.add("show-menu");
+        menu.classList.add("showMenu");
         closeIcon.style.display = "block";
         menuIcon.style.display = "none";
     }
 }
 
-hamburger.addEventListener("click", mobileMenu);
+mobileMenu.addEventListener("click", toggleMenu);
 
 menuItems.forEach(
     function(menuItem){
