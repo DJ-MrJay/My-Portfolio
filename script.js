@@ -18,8 +18,8 @@ function toggleMenu() {
 
 mobileMenu.addEventListener("click", toggleMenu);
 
-menuItems.forEach(
-    function(menuItem){
-        menuItem.addEventListener("click", mobileMenu);
+menuItem.forEach(
+    function (menuItem) {
+        menuItem.addEventListener("click", toggleMenu);
     }
 )
