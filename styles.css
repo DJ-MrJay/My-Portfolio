@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 .container {
@@ -31,10 +33,6 @@ h3 {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-ul {
-  list-style: none;
 }
 
 h1,
@@ -67,7 +65,6 @@ nav {
 
 nav a {
   color: #6070ff;
-  text-decoration: none;
 }
 
 .logo {
@@ -143,7 +140,6 @@ nav a {
 }
 
 .social-media ul {
-  list-style: none;
   display: flex;
   column-gap: 10px;
   font-size: 25px;
@@ -230,7 +226,6 @@ img:hover {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  list-style: none;
   gap: 10px;
   padding: 0;
 }
@@ -454,7 +449,6 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    list-style: none;
     gap: 32px;
     padding: 0;
   }
