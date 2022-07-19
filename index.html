@@ -124,7 +124,7 @@
                 <li>javaScript</li>
               </ul>
             </div>
-            <button type="button" id="openmodal">See Project</button>
+            <button type="button" data-model-target="#modalContainer">See Project</button>
           </div>
         </div>
 
@@ -334,18 +334,18 @@
                 <li>javaScript</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button data-model-target="#modalContainer" type="button">See Project</button>
           </div>
           <div>
             <img src="images/snapshoot-portfolio-8.svg" alt="Portfolio Screenshot" />
           </div>
         </div>
 
-        <div class="modal-container" id="modalcontainer">
+        <div class="modal-container" id="modalContainer">
           <div class="modal" id="modal">
             <div class="modal-content">
               <h2>Tonic</h2>
-              <i class="fa-solid fa-xmark fa-2x" id="closemodal"></i>
+              <button data-close-button><i class="fa-solid fa-xmark fa-2x" id="closemodal"></i></button>
               <div class="project-subtitle">
                 <div class="flex-breadcrumbs">
                   <h3 class="canopy">CANOPY</h3>
@@ -374,6 +374,7 @@
               </div>
           </div>
         </div>
+        <div id="overlay"></div>
 
       </section>
 
