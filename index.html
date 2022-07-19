@@ -1,52 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonah | My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-          <div class="logo">
-            <a href="#"><img src="images/jonah-logo.svg" alt="Logo"></a>
-          </div>
-          <div class="mobile-menu">
-            <a href="#"><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span></a>
-          </div>
-          <div class="desktop-menu">
-            <ul>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonah | My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
 
-      <main>
-        <section class="home">
-          <h1>I'm Jonah.<br />Glad to see you!</h1>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="images/jonah-logo.svg" alt="Logo"></a>
+        </div>
 
-          <div class="description">
+        <ul class="menu">
+          <li><a class="menu-item" href="#works">Portfolio</a></li>
+          <li><a class="menu-item" href="#about">About</a></li>
+          <li><a class="menu-item" href="#contact">Contact</a></li>
+        </ul>
+
+        <ul class="desktop-menu">
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="mobile-menu">
+          <a class="menu-icon" href="#"><i class="fas fa-bars fa-2x" aria-hidden="true"></i><span
+              class="sr-only">Menu</span></a>
+          <a class="close-icon" href="#"><i class="fa-solid fa-xmark fa-2x" aria-hidden="true"></i><span
+              class="sr-only">Close</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <h1>I'm Jonah.<br />Glad to see you!</h1>
+
+        <div class="description">
+          <p>
+            I’m a software developer! I can help you build a product feature
+            or website. Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+        </div>
+
+        <div class="connect">
+          <a href="#">LET'S CONNECT</a>
+        </div>
+
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="https://twitter.com">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter Page</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook Page</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn Page</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span class="sr-only">GitHub Page</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube Page</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="card one">
+          <div>
+            <img src="images/snapshoot-portfolio-1.svg" alt="Portfolio Screenshot" />
+          </div>
+          <div class="card-text">
+            <h2>Tonic</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">CANOPY</h3>
+                <div class="dot"></div>
+                <h3>Back End Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
             <p>
-              I’m a software developer! I can help you build a product feature
-              or website. Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
-              hesitate to contact me.
+              A daily selection of privately personalized reads; no accounts
+              or sign-ups required.
             </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
           </div>
+        </div>
+
+        <div class="card two">
+          <div>
+            <img src="images/snapshoot-portfolio-5.svg" alt="Portfolio Screenshot" />
+          </div>
+          <div class="card-text">
+            <h2>Tonic</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">CANOPY</h3>
+                <div class="dot"></div>
+                <h3>Back End Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
+            <p>
+              A daily selection of privately personalized reads; no accounts
+              or sign-ups required.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+        </div>
+
+        <div class="card three">
+          <div>
+            <img src="images/snapshoot-portfolio-2.svg" alt="Portfolio Screenshot" />
+          </div>
+          <div class="card-text">
+            <h2>Multi-Post Stories</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">CANOPY</h3>
+                <div class="dot"></div>
+                <h3>Back End Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
+            <p>
+              A daily selection of privately personalized reads; no accounts
+              or sign-ups required.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+        </div>
+
+        <div class="card four">
+          <div class="card-text">
+            <h2>Multi-Post Stories</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">FACEBOOK</h3>
+                <div class="dot"></div>
+                <h3>Full Stack Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
+            <p>
+              Experimental content creation feature that allows users to add
+              to an existing story over the course of a day without spamming
+              their friends.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+          <div>
+            <img src="images/snapshoot-portfolio-6.svg" alt="Portfolio Screenshot" />
+          </div>
+        </div>
+
+        <div class="card five">
+          <div><img src="images/snapshoot-portfolio-3.svg" alt="" /></div>
+          <div class="card-text">
+            <h2>Tonic</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">CANOPY</h3>
+                <div class="dot"></div>
+                <h3>Back End Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
+            <p>
+              A daily selection of privately personalized reads; no accounts
+              or sign-ups required.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+        </div>
+
+        <div class="card six">
+          <div>
+            <img src="images/snapshoot-portfolio-7.svg" alt="Portfolio Screenshot" />
+          </div>
+          <div class="card-text">
+            <h2>Facebook 360</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">FACEBOOK</h3>
+                <div class="dot"></div>
+                <h3>Full Stack Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
+            <p>
+              Exploring the future of media in Facebook's first Virtual
+              Reality app; a place to discover and enjoy 360 photos and videos
+              on Gear VR.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+        </div>
+
+        <div class="card seven">
+          <div>
+            <img src="images/snapshoot-portfolio-4.svg" alt="Portfolio Screenshot" />
+          </div>
+          <div class="card-text">
+            <h2>Multi-Post Stories</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">CANOPY</h3>
+                <div class="dot"></div>
+                <h3>Back End Dev</h3>
+                <div class="dot"></div>
+                <h3>2015</h3>
+              </div>
+            </div>
+            <p>
+              A daily selection of privately personalized reads; no accounts
+              or sign-ups required.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+        </div>
+
+        <div class="card eight">
+          <div class="card-text">
+            <h2>Uber Navigation</h2>
+            <div class="project-subtitle">
+              <div class="flex-breadcrumbs">
+                <h3 class="canopy">UBER</h3>
+                <div class="dot"></div>
+                <h3>Lead Developer</h3>
+                <div class="dot"></div>
+                <h3>2018</h3>
+              </div>
+            </div>
+            <p>
+              A smart assistant to make driving more safe, efficient, and fun
+              by unlocking your most expensive computer: your car.
+            </p>
+            <div class="categories">
+              <ul>
+                <li>html</li>
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+            </div>
+            <button type="button">See Project</button>
+          </div>
+          <div>
+            <img src="images/snapshoot-portfolio-8.svg" alt="Portfolio Screenshot" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-body">
+          <h1>About<br />Myself</h1>
+
+          <p>
+            I’m a software developer! I can help you build a product feature
+            or website. Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
 
           <div class="connect">
             <a href="#">LET'S CONNECT</a>
@@ -57,453 +360,117 @@
               <li>
                 <a href="https://twitter.com">
                   <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter Page</span>
+                  <span class="sr-only">Twitter page</span>
                 </a>
               </li>
               <li>
                 <a href="https://facebook.com">
                   <i class="fab fa-facebook" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook Page</span>
+                  <span class="sr-only">Facebook page</span>
                 </a>
               </li>
               <li>
                 <a href="https://linkedin.com">
                   <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn Page</span>
+                  <span class="sr-only">LinkedIn page</span>
                 </a>
               </li>
               <li>
                 <a href="https://github.com">
                   <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">GitHub Page</span>
+                  <span class="sr-only">GitHub page</span>
                 </a>
               </li>
               <li>
                 <a href="https://youtube.com">
                   <i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">YouTube Page</span>
+                  <span class="sr-only">YouTube page</span>
                 </a>
               </li>
             </ul>
           </div>
-        </section>
 
-        <section class="works">
-          <div class="card one">
-            <div>
-              <img
-                src="images/snapshoot-portfolio-1.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-            <div class="card-text">
-              <h2>Tonic</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">CANOPY</h3>
-                  <div class="dot"></div>
-                  <h3>Back End Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
+          <div><button type="button">Get my resume</button></div>
+        </div>
+
+        <div class="about-skills">
+          <ul>
+            <li class="accordion-btn">
+              <div>
+                <h3>Languages</h3>
+                <i class="fas fa-chevron-down"></i>
               </div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <div class="categories">
+
+              <div class="accordion">
                 <ul>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javaScript</li>
+                  <li class="accordion-item">
+                    <div class="language-icon">
+                      <img src="images/JavaScript_logo.svg" alt="JavaScript Logo" />
+                    </div>
+                    JavaScript
+                  </li>
+                  <li class="accordion-item">
+                    <div class="language-icon">
+                      <img src="images/HTML5_logo.svg" alt="HTML5 Logo" />
+                    </div>
+                    HTML
+                  </li>
+                  <li class="accordion-item">
+                    <div class="language-icon">
+                      <img src="images/CSS3_logo.svg" alt="CSS3 Logo" />
+                    </div>
+                    CSS
+                  </li>
                 </ul>
               </div>
-              <button type="button">See Project</button>
-            </div>
+            </li>
+
+            <li class="accordion-btn">
+              <div>
+                <h3>Frameworks</h3>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <hr />
+            </li>
+
+            <li class="accordion-btn">
+              <div>
+                <h3>Skills</h3>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="form" id="contact">
+        <div class="form-container">
+          <h1>Contact me</h1>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built, or a project that needs coding, I’d
+            love to help with it.
+          </p>
+
+          <div>
+            <form action="https://formspree.io/f/xrgjwepv" method="post">
+              <input type="text" id="fname" name="fullname" placeholder="Your name?" maxlength="30" required />
+
+              <input type="email" id="email" name="email" placeholder="Your email address?" maxlength="30" required />
+
+              <textarea id="msg" name="message" placeholder="Write your message here" maxlength="500"
+                required></textarea>
+
+              <input type="submit" value="Get In Touch" />
+            </form>
           </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-          <div class="card two">
-            <div>
-              <img
-                src="images/snapshoot-portfolio-5.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-            <div class="card-text">
-              <h2>Tonic</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">CANOPY</h3>
-                  <div class="dot"></div>
-                  <h3>Back End Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
-              </div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-          </div>
+  <script src="./script.js"></script>
+</body>
 
-          <div class="card three">
-            <div>
-              <img
-                src="images/snapshoot-portfolio-2.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-            <div class="card-text">
-              <h2>Multi-Post Stories</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">CANOPY</h3>
-                  <div class="dot"></div>
-                  <h3>Back End Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
-              </div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card four">
-            <div class="card-text">
-              <h2>Multi-Post Stories</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">FACEBOOK</h3>
-                  <div class="dot"></div>
-                  <h3>Full Stack Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
-              </div>
-              <p>
-                Experimental content creation feature that allows users to add
-                to an existing story over the course of a day without spamming
-                their friends.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>Ruby on rails</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-            <div>
-              <img
-                src="images/snapshoot-portfolio-6.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-          </div>
-
-          <div class="card five">
-            <div><img src="images/snapshoot-portfolio-3.svg" alt="" /></div>
-            <div class="card-text">
-              <h2>Tonic</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">CANOPY</h3>
-                  <div class="dot"></div>
-                  <h3>Back End Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
-              </div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card six">
-            <div>
-              <img
-                src="images/snapshoot-portfolio-7.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-            <div class="card-text">
-              <h2>Facebook 360</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">FACEBOOK</h3>
-                  <div class="dot"></div>
-                  <h3>Full Stack Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
-              </div>
-              <p>
-                Exploring the future of media in Facebook's first Virtual
-                Reality app; a place to discover and enjoy 360 photos and videos
-                on Gear VR.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>Ruby on rails</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card seven">
-            <div>
-              <img
-                src="images/snapshoot-portfolio-4.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-            <div class="card-text">
-              <h2>Multi-Post Stories</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">CANOPY</h3>
-                  <div class="dot"></div>
-                  <h3>Back End Dev</h3>
-                  <div class="dot"></div>
-                  <h3>2015</h3>
-                </div>
-              </div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card eight">
-            <div class="card-text">
-              <h2>Uber Navigation</h2>
-              <div class="project-subtitle">
-                <div class="flex-breadcrumbs">
-                  <h3 class="canopy">UBER</h3>
-                  <div class="dot"></div>
-                  <h3>Lead Developer</h3>
-                  <div class="dot"></div>
-                  <h3>2018</h3>
-                </div>
-              </div>
-              <p>
-                A smart assistant to make driving more safe, efficient, and fun
-                by unlocking your most expensive computer: your car.
-              </p>
-              <div class="categories">
-                <ul>
-                  <li>html</li>
-                  <li>Ruby on rails</li>
-                  <li>css</li>
-                  <li>javaScript</li>
-                </ul>
-              </div>
-              <button type="button">See Project</button>
-            </div>
-            <div>
-              <img
-                src="images/snapshoot-portfolio-8.svg"
-                alt="Portfolio Screenshot"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section class="about">
-          <div class="about-body">
-            <h1>About<br />Myself</h1>
-
-            <p>
-              I’m a software developer! I can help you build a product feature
-              or website. Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
-              hesitate to contact me.
-            </p>
-
-            <div class="connect">
-              <a href="#">LET'S CONNECT</a>
-            </div>
-
-            <div class="social-media">
-              <ul>
-                <li>
-                  <a href="https://twitter.com">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter page</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://facebook.com">
-                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook page</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                    <span class="sr-only">LinkedIn page</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    <span class="sr-only">GitHub page</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://youtube.com">
-                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                    <span class="sr-only">YouTube page</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div><button type="button">Get my resume</button></div>
-          </div>
-
-          <div class="about-skills">
-            <ul>
-              <li class="accordion-btn">
-                <div>
-                  <h3>Languages</h3>
-                  <i class="fas fa-chevron-down"></i>
-                </div>
-
-                <div class="accordion">
-                  <ul>
-                    <li class="accordion-item">
-                      <div class="language-icon">
-                        <img
-                          src="images/JavaScript_logo.svg"
-                          alt="JavaScript Logo"
-                        />
-                      </div>
-                      JavaScript
-                    </li>
-                    <li class="accordion-item">
-                      <div class="language-icon">
-                        <img src="images/HTML5_logo.svg" alt="HTML5 Logo" />
-                      </div>
-                      HTML
-                    </li>
-                    <li class="accordion-item">
-                      <div class="language-icon">
-                        <img src="images/CSS3_logo.svg" alt="CSS3 Logo" />
-                      </div>
-                      CSS
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="accordion-btn">
-                <div>
-                  <h3>Frameworks</h3>
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-                <hr />
-              </li>
-
-              <li class="accordion-btn">
-                <div>
-                  <h3>Skills</h3>
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-                <hr />
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="form">
-          <div class="form-container">
-            <h1>Contact me</h1>
-            <p>
-              If you have an application you are interested in developing, a
-              feature that you need built, or a project that needs coding, I’d
-              love to help with it.
-            </p>
-
-            <div>
-              <form action="https://formspree.io/f/xrgjwepv" method="post">
-                <input
-                  type="text"
-                  id="fname"
-                  name="fullname"
-                  placeholder="Your name?"
-                  maxlength="30"
-                  required
-                />
-
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your email address?"
-                  maxlength="30"
-                  required
-                />
-
-                <textarea
-                  id="msg"
-                  name="message"
-                  placeholder="Write your message here"
-                  maxlength="500"
-                  required
-                ></textarea>
-
-                <input type="submit" value="Get In Touch" />
-              </form>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
 </html>

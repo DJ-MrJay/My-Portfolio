@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -31,10 +34,6 @@ h3 {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-ul {
-  list-style: none;
 }
 
 h1,
@@ -67,7 +66,6 @@ nav {
 
 nav a {
   color: #6070ff;
-  text-decoration: none;
 }
 
 .logo {
@@ -76,8 +74,46 @@ nav a {
   transition-duration: 1s;
 }
 
+.mobile-menu {
+  cursor: pointer;
+  z-index: 100;
+}
+
 .desktop-menu {
   display: none;
+}
+
+.close-icon {
+  display: none;
+  color: #fff;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  padding: 20% 8%;
+  background: #6070ff;
+  opacity: 0.95;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.showMenu {
+  transform: translateY(0);
 }
 
 .description p {
@@ -143,7 +179,6 @@ nav a {
 }
 
 .social-media ul {
-  list-style: none;
   display: flex;
   column-gap: 10px;
   font-size: 25px;
@@ -230,7 +265,6 @@ img:hover {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  list-style: none;
   gap: 10px;
   padding: 0;
 }
@@ -445,6 +479,7 @@ input[type="submit"]:hover {
   }
 
   .desktop-menu {
+    transform: translateY(0);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -454,7 +489,6 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    list-style: none;
     gap: 32px;
     padding: 0;
   }
