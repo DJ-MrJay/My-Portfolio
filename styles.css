@@ -289,6 +289,7 @@ button {
   padding: 12px;
   display: inline-block;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 button:hover,
@@ -471,13 +472,25 @@ input[type="submit"]:hover {
 
 .modal-container {
   padding: 10% 5%;
+  display: flex;
+  justify-content: center;
   background: rgba(193, 199, 208, 0.9);
   top: 0;
   left: 0;
-  /* width: 100vw;*/
-  height: 100vh;
+  /* opacity: 0;
+  pointer-events: none; */
+
+  /* width: 100vw;
+  height: 100vh; */
   position: fixed;
-  /*display: none; */
+  transition: opacity 0.5s ease;
+
+  /* display: none; */
+}
+
+.modal-container.showmodal {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .modal {
@@ -486,6 +499,8 @@ input[type="submit"]:hover {
   border-radius: 24px;
   padding: 1.2rem;
   position: relative;
+
+  /* height: 100vh; */
 }
 
 .modal-content {
@@ -503,7 +518,8 @@ input[type="submit"]:hover {
   padding: 12px 30px;
 }
 
-.modal-buttons .fa-github, .fa-long-arrow-right {
+.modal-buttons .fa-github,
+.fa-long-arrow-right {
   margin-left: 0.8rem;
 }
 
