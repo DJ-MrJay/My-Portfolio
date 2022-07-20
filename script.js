@@ -3,9 +3,6 @@ const menuItem = document.querySelectorAll('.menu-item');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuIcon = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon');
-const openMobileModal = document.querySelectorAll('[data-modal-target]')
-const closeMobileModal = document.querySelectorAll('[data-close-button]')
-const overlay = document.querySelector('#overlay')
 
 function toggleMenu() {
   if (menu.classList.contains('showMenu')) {
@@ -27,35 +24,109 @@ menuItem.forEach(
   },
 );
 
-openMobileModal.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
 
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal-container.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
 
-closeMobileModal.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal-container')
-    closeModal(modal)
-  })
-})
 
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-}
 
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+
+
+const projectDetail = [{
+  title: 'Tonic',
+  exprience: ['CANOPY', 'Back End Dev', '2015'],
+  desription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['html', 'css', 'javascript'],
+  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
+  image: 'images/snapshoot-portfolio-5.svg',
+  imageMobile: 'images/snapshoot-portfolio-1.svg',
+  imagePopup: 'images/snapshoot-portfolio-5.svg',
+  imageMobilePopup: 'images/snapshoot-portfolio-1.svg',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+},
+{
+  title: 'Multi-Post Stories',
+  exprience: ['FACEBOOK', 'Back End Dev', '2015'],
+  desription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
+  image: 'images/snapshoot-portfolio-6.svg',
+  imageMobile: 'images/snapshoot-portfolio-2.svg',
+  imagePopup: 'images/snapshoot-portfolio-6.svg',
+  imageMobilePopup: 'images/snapshoot-portfolio-2.svg',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+},
+{
+  title: 'Facebook 360',
+  exprience: ['FACEBOOK', 'Back End Dev', '2015'],
+  desription: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
+  image: 'images/snapshoot-portfolio-7.svg',
+  imageMobile: 'images/snapshoot-portfolio-3.svg',
+  imagePopup: 'images/snapshoot-portfolio-7.svg',
+  imageMobilePopup: 'images/snapshoot-portfolio-3.svg',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+},
+{
+  title: 'Uber Navigation',
+  exprience: ['UBER', 'Lead Developer', '2018'],
+  desription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
+  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
+  image: 'images/snapshoot-portfolio-8.svg',
+  imageMobile: 'images/snapshoot-portfolio-4.svg',
+  imagePopup: 'images/snapshoot-portfolio-8.svg',
+  imageMobilePopup: 'images/snapshoot-portfolio-4.svg',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+},
+];
+
+
+
+
+
+for (let i = 0; i < projectDetail.length; i += 1) {
+  let tech = '';
+  let experienceList = '';
+
+  for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
+    tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
+  }
+
+  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
+    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].exprience[k]}</a></li>`;
+    if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="images/dot.svg" alt="dot"></a></li>';
+  }
+  document.querySelector('#portfolio').innerHTML += `
+  <div class="card">
+    <div class="one"><img src="${projectDetail[i].imageMobile}" alt="Portfolio Screenshot"></div>
+    <div class="two"><img src="${projectDetail[i].image}" alt="Portfolio Screenshot"></div>
+    <div class="card-text" >
+      <div class="one">
+        <h2>${projectDetail[i].title}</h2>
+      </div>
+      <div class="two">
+        <h2>${projectDetail[i].title}</h2>
+      </div>        
+      <ul class="flex-breadcrumbs">
+        ${experienceList}
+      </ul>
+      <p>${projectDetail[i].desription}</p>
+      <div class="categories">
+      <ul>
+        ${tech}
+      </ul>
+      </div>
+        <button data-index="${i}" class="see-project">See Project</button>
+      </div>
+  </div>`;
+
+
 }
