@@ -177,3 +177,59 @@ const displayPopupModal = (i) => {
   popupModal.style.display = 'block';
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
+
+// Form Validation
+
+function errorMessage(elemId, requiredMessage) {
+  document.getElementById(elemId).innerHTML = requiredMessage;
+}
+
+function validationForm() {
+  const fname = document.form.fullname.value;
+  const email = document.form.email.value;
+  const message = document.form.message.value;
+
+  let nameError = true;
+  let emailError = true;
+  let messageError = true;
+
+  if (fname === '') {
+    errorMessage('nameError', '*Please enter your full name');
+  } else {
+    const nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    if (!nameRegex.test(fname)) {
+      errorMessage('nameError', '*Please enter first and last names');
+    } else {
+      errorMessage('nameError', '');
+      nameError = false;
+    }
+  }
+
+  if (email === '') {
+    errorMessage('emailError', '*Please enter your email address');
+  } else {
+    const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+    if (!emailRegex.test(email)) {
+      errorMessage('emailError', '*Email address MUST be in lower case.');
+    } else {
+      errorMessage('emailError', '');
+      emailError = false;
+    }
+  }
+
+  if (message === '') {
+    errorMessage('messageError', '*Please type a message');
+  } else {
+    const messageRegex = /^[a-zA-Z\s]+$/;
+    if (!messageRegex.test(message)) {
+      errorMessage('messageError', '*Please type a valid message');
+    } else {
+      errorMessage('messageError', '');
+      messageError = false;
+    }
+  }
+
+  if ((nameError || emailError || messageError === true)) {
+    return false;
+  }
+}
