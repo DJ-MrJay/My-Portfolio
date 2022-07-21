@@ -175,16 +175,16 @@ document.querySelectorAll('.see-project').forEach((row) => row.addEventListener(
 // Form Validation
 
 
-function errorMessage (elemId, requiredMessage) {
+function errorMessage(elemId, requiredMessage) {
   document.getElementById(elemId).innerHTML = requiredMessage;
 }
 
 function validationForm() {
-  var name = document.forms['form'] ['fullname'].value;
-  var email = document.forms['form'] ['email'].value;
-  var message = document.forms['form'] ['message'].value;
+  var name = document.forms['form']['fullname'].value;
+  var email = document.forms['form']['email'].value;
+  var message = document.forms['form']['message'].value;
 
-  var nameError  = emailError = messageError = true;
+  var nameError = emailError = messageError = true;
 
   if (name == '') {
     errorMessage('nameError', '\*Please enter your full name')
@@ -192,36 +192,36 @@ function validationForm() {
   else {
     var nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
     if (!nameRegex.test(name)) {
-      errorMessage('nameError', '\*Please enter valid first and last name')
+      errorMessage('nameError', '\*Please enter first and last names')
     } else {
       errorMessage('nameError', '')
       nameError = false;
     }
   }
 
-  if(email == '') {
-    errorMessage ('emailError', "\*Please enter your email address")
-  }else {
-    var emailRegex = /^[a-zA-Z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-  if(!emailRegex.test(email)){
-    errorMessage ('emailError', "\*Please enter a valid email address")
-    } else{
-      errorMessage ('emailError', '')
-    emailError = false;
+  if (email == '') {
+    errorMessage('emailError', "\*Please enter your email address")
+  } else {
+    var emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+    if (!emailRegex.test(email)) {
+      errorMessage('emailError', "\*Email address MUST be in lower case.")
+    } else {
+      errorMessage('emailError', '')
+      emailError = false;
     }
   }
 
-  if(message == '') {
-    errorMessage ('messageError', '\*Please type your message')
+  if (message == '') {
+    errorMessage('messageError', '\*Please type a message')
 
   } else {
-  var messageRegex = /^[a-zA-Z\s]+$/;
-  if(!messageRegex.test(message)){
-    errorMessage ('messageError', '\*Please type a valid message')
-  } else{
-    errorMessage ('messageError', '')
-    messageError = false;
-  }
+    var messageRegex = /^[a-zA-Z\s]+$/;
+    if (!messageRegex.test(message)) {
+      errorMessage('messageError', '\*Please type a valid message')
+    } else {
+      errorMessage('messageError', '')
+      messageError = false;
+    }
   }
 
   if ((nameError || emailError || messageError == true)) {

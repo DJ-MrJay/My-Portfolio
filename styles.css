@@ -468,6 +468,13 @@ input[type="submit"]:hover {
   background-color: #cfd8dc;
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
 /* ==============Modal Styling============== */
 
 .modal-container {
@@ -683,6 +690,13 @@ input[type="submit"]:hover {
   input[type="submit"] {
     float: none;
     min-width: 100px;
+  }
+
+  .error {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
   }
 
   .modal-container {
