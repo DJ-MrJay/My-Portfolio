@@ -671,17 +671,18 @@ input[type="submit"]:hover {
   }
 
   input {
-    max-width: 447px;
+    min-width: 500px;
     border-radius: 2px;
   }
 
   textarea {
-    max-width: 447px;
+    min-width: 500px;
     border-radius: 2px;
   }
 
   input[type="submit"] {
     float: none;
+    min-width: 100px;
   }
 
   .modal-container {

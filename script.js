@@ -171,9 +171,14 @@ const displayPopupModal = (i) => {
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
 
+
+// Form Validation
+
+
 function errorMessage (elemId, requiredMessage) {
   document.getElementById(elemId).innerHTML = requiredMessage;
 }
+
 function validationForm() {
   var name = document.forms['form'] ['fullname'].value;
   var email = document.forms['form'] ['email'].value;
@@ -181,16 +186,16 @@ function validationForm() {
 
   var nameError  = emailError = messageError = true;
 
-  if(name == '') {
-    errorMessage ('nameError', '\*Please Enter Your First Name')
+  if (name == '') {
+    errorMessage('nameError', '\*Please enter your full name')
   }
   else {
-    var nameRegex = /^[a-zA-Z\s]+$/;
-    if(nameRegex.test(name) === false){
-      errorMessage ('nameError', '\*Please Enter A Valid  First Name')
-    } else{
-      errorMessage ('nameError', '')
-     nameError = false;
+    var nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    if (!nameRegex.test(name)) {
+      errorMessage('nameError', '\*Please enter valid first and last name')
+    } else {
+      errorMessage('nameError', '')
+      nameError = false;
     }
   }
 
@@ -198,7 +203,7 @@ function validationForm() {
     errorMessage ('emailError', "\*Please enter your email address")
   }else {
     var emailRegex = /^[a-zA-Z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-  if(emailRegex.test(email) === false){
+  if(!emailRegex.test(email)){
     errorMessage ('emailError', "\*Please enter a valid email address")
     } else{
       errorMessage ('emailError', '')
@@ -207,12 +212,12 @@ function validationForm() {
   }
 
   if(message == '') {
-    errorMessage ('messageError', '\*Please Enter Your Message')
+    errorMessage ('messageError', '\*Please type your message')
 
   } else {
-  var messRegex = /^[a-zA-Z\s]+$/;
-  if(messRegex.test(message) === false){
-    errorMessage ('messageError', '\*Please Enter A Valid Message')
+  var messageRegex = /^[a-zA-Z\s]+$/;
+  if(!messageRegex.test(message)){
+    errorMessage ('messageError', '\*Please type a valid message')
   } else{
     errorMessage ('messageError', '')
     messageError = false;
