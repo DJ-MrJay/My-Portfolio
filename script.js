@@ -170,3 +170,59 @@ const displayPopupModal = (i) => {
   popupModal.style.display = 'block';
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
+
+function errorMessage (elemId, requiredMessage) {
+  document.getElementById(elemId).innerHTML = requiredMessage;
+}
+function validationForm() {
+  var name = document.forms['form'] ['fullname'].value;
+  var email = document.forms['form'] ['email'].value;
+  var message = document.forms['form'] ['message'].value;
+
+  var nameError  = emailError = messageError = true;
+
+  if(name == '') {
+    errorMessage ('nameError', '\*Please Enter Your First Name')
+  }
+  else {
+    var nameRegex = /^[a-zA-Z\s]+$/;
+    if(nameRegex.test(name) === false){
+      errorMessage ('nameError', '\*Please Enter A Valid  First Name')
+    } else{
+      errorMessage ('nameError', '')
+     nameError = false;
+    }
+  }
+
+  if(email == '') {
+    errorMessage ('emailError', "\*Please enter your email address")
+  }else {
+    var emailRegex = /^[a-zA-Z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+  if(emailRegex.test(email) === false){
+    errorMessage ('emailError', "\*Please enter a valid email address")
+    } else{
+      errorMessage ('emailError', '')
+    emailError = false;
+    }
+  }
+
+  if(message == '') {
+    errorMessage ('messageError', '\*Please Enter Your Message')
+
+  } else {
+  var messRegex = /^[a-zA-Z\s]+$/;
+  if(messRegex.test(message) === false){
+    errorMessage ('messageError', '\*Please Enter A Valid Message')
+  } else{
+    errorMessage ('messageError', '')
+    messageError = false;
+  }
+  }
+
+  if ((nameError || emailError || messageError == true)) {
+
+    return false;
+  }
+
+}
+
