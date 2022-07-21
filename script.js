@@ -24,11 +24,7 @@ menuItem.forEach(
   },
 );
 
-
-
-
-
-
+// 'Works' Section Details
 
 const projectDetail = [{
   title: 'Tonic',
@@ -88,9 +84,7 @@ const projectDetail = [{
 },
 ];
 
-
-
-
+// Push 'Works' Content
 
 for (let i = 0; i < projectDetail.length; i += 1) {
   let tech = '';
@@ -120,13 +114,68 @@ for (let i = 0; i < projectDetail.length; i += 1) {
       </ul>
       <p>${projectDetail[i].desription}</p>
       <div class="categories">
-      <ul>
-        ${tech}
-      </ul>
+        <ul>
+          ${tech}
+        </ul>
       </div>
-        <button data-index="${i}" class="see-project">See Project</button>
-      </div>
+      <button data-index="${i}" class="see-project">See Project</button>
+    </div>
   </div>`;
-
-
 }
+
+// Popup Modal
+
+const popupModal = document.querySelector('#portfolioPopup');
+const displayPopupModal = (i) => {
+  let tech = '';
+  let techPop = '';
+  let experienceList = '';
+
+  for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
+    tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
+  }
+
+  for (let j = 0; j < projectDetail[i].popupTech.length; j += 1) {
+    techPop += `<li class="lang-group" id="mobile">${projectDetail[i].popupTech[j]}</li>`;
+  }
+
+  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
+    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].exprience[k]}</a></li>`;
+    if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="images/dot.svg" alt="dot"></a></li>';
+  }
+  document.querySelector('#portfolioPopup').innerHTML = `
+  
+    <div class="modal">
+      <div class="modal-content">
+        <h2>${projectDetail[i].title}</h2>
+        <span><a onclick="closePopupModal()" href="" class="close-popup"><i class="fa-solid fa-xmark fa-2x" id="closemodal"></i></a></span>
+                      
+        <ul class="flex-breadcrumbs">
+          ${experienceList}
+        </ul>
+        <div class="one"><img src="${projectDetail[i].imageMobile}" alt="Portfolio Screenshot"></div>
+        <div class="two"><img src="${projectDetail[i].image}" alt="Portfolio Screenshot"></div>
+        <p>${projectDetail[i].popDescription}</p>
+        <div class="categories">
+          <ul>
+            ${tech}
+          </ul>
+        </div>
+        <div class="modal-buttons">
+          <button>
+          <a href="${projectDetail[i].seeLive}">See Live<i class="fas fa-long-arrow-right"></i></a>
+          </button>
+          <button>
+          <a href="${projectDetail[i].seeSource}">See Source<i class="fab fa-github" aria-hidden="true"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>  `;
+  popupModal.style.display = 'block';
+};
+document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
+
+const closeModal = document.querySelector('#portfolioPopup');
+const closePopupModal = () => {
+  closeModal.style.display = 'none';
+};
