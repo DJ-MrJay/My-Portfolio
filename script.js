@@ -185,7 +185,7 @@ function errorMessage(elemId, requiredMessage) {
 }
 
 function validationForm() {
-  const fname = document.form.fullname.value;
+  const fname = document.form.fname.value;
   const email = document.form.email.value;
   const message = document.form.message.value;
 
