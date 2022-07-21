@@ -178,7 +178,7 @@ function errorMessage(elemId, requiredMessage) {
 }
 
 function validationForm() {
-  const fname = document.form.fullname.value;
+  const fName = document.form.fullname.value;
   const email = document.form.email.value;
   const message = document.form.message.value;
 
@@ -186,11 +186,11 @@ function validationForm() {
   let emailError = true;
   let messageError = true;
 
-  if (fname === '') {
+  if (fName === '') {
     errorMessage('nameError', '*Please enter your full name');
   } else {
     const nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    if (!nameRegex.test(fname)) {
+    if (!nameRegex.test(fName)) {
       errorMessage('nameError', '*Please enter first and last names');
     } else {
       errorMessage('nameError', '');
