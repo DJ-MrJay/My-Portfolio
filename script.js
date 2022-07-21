@@ -171,63 +171,58 @@ const displayPopupModal = (i) => {
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
 
-
 // Form Validation
-
 
 function errorMessage(elemId, requiredMessage) {
   document.getElementById(elemId).innerHTML = requiredMessage;
 }
 
 function validationForm() {
-  var name = document.forms['form']['fullname'].value;
-  var email = document.forms['form']['email'].value;
-  var message = document.forms['form']['message'].value;
+  const fname = document.form.fullname.value;
+  const email = document.form.email.value;
+  const message = document.form.message.value;
 
-  var nameError = emailError = messageError = true;
+  let nameError = true;
+  let emailError = true;
+  let messageError = true;
 
-  if (name == '') {
-    errorMessage('nameError', '\*Please enter your full name')
-  }
-  else {
-    var nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    if (!nameRegex.test(name)) {
-      errorMessage('nameError', '\*Please enter first and last names')
+  if (fname === '') {
+    errorMessage('nameError', '*Please enter your full name');
+  } else {
+    const nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    if (!nameRegex.test(fname)) {
+      errorMessage('nameError', '*Please enter first and last names');
     } else {
-      errorMessage('nameError', '')
+      errorMessage('nameError', '');
       nameError = false;
     }
   }
 
-  if (email == '') {
-    errorMessage('emailError', "\*Please enter your email address")
+  if (email === '') {
+    errorMessage('emailError', '*Please enter your email address');
   } else {
-    var emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+    const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
     if (!emailRegex.test(email)) {
-      errorMessage('emailError', "\*Email address MUST be in lower case.")
+      errorMessage('emailError', '*Email address MUST be in lower case.');
     } else {
-      errorMessage('emailError', '')
+      errorMessage('emailError', '');
       emailError = false;
     }
   }
 
-  if (message == '') {
-    errorMessage('messageError', '\*Please type a message')
-
+  if (message === '') {
+    errorMessage('messageError', '*Please type a message');
   } else {
-    var messageRegex = /^[a-zA-Z\s]+$/;
+    const messageRegex = /^[a-zA-Z\s]+$/;
     if (!messageRegex.test(message)) {
-      errorMessage('messageError', '\*Please type a valid message')
+      errorMessage('messageError', '*Please type a valid message');
     } else {
-      errorMessage('messageError', '')
+      errorMessage('messageError', '');
       messageError = false;
     }
   }
 
-  if ((nameError || emailError || messageError == true)) {
-
+  if ((nameError || emailError || messageError === true)) {
     return false;
   }
-
 }
-
