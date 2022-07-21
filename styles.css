@@ -225,7 +225,7 @@ img {
   object-fit: contain;
 }
 
-img:hover {
+.card img:hover {
   transform: scale(0.95);
   transition-duration: 0.4s;
 }
@@ -275,6 +275,7 @@ img:hover {
   padding: 4px 12px;
   font-size: 12px;
   color: #6070ff;
+  width: fit-content;
 }
 
 button {
@@ -289,6 +290,7 @@ button {
   padding: 12px;
   display: inline-block;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 button:hover,
@@ -383,7 +385,12 @@ button:disabled {
 }
 
 hr {
+  border-top: 1px solid #ebecf0;
+}
+
+.accordion-btn hr {
   margin: 0 -12px 0 -12px;
+  border-top: 1px solid #ebecf0;
 }
 
 .canopy {
@@ -467,7 +474,75 @@ input[type="submit"]:hover {
   background-color: #cfd8dc;
 }
 
-/* ================================Desktop version================================= */
+/* ==============Modal Styling============== */
+
+.modal-container {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding: 10% 5%;
+  background-color: #c1c7d0e0;
+  display: none;
+}
+
+.modal {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 24px;
+  padding: 1.2rem;
+  position: relative;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+.modal-buttons .fa-github,
+.fa-external-link {
+  margin-left: 0.8rem;
+}
+
+.modal-content .fa-xmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.2rem;
+}
+
+.flex-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tech-and-buttons {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 1.5rem;
+}
+
+/* .desc-desk {
+  max-width:100%;
+} */
+
+/* ==============Desktop version============== */
 
 @media (min-width: 768px) {
   * {
@@ -565,10 +640,12 @@ input[type="submit"]:hover {
     line-height: 24px;
   }
 
-  .one,
-  .three,
-  .five,
-  .seven {
+  .two {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .one {
     display: none;
   }
 
@@ -629,5 +706,48 @@ input[type="submit"]:hover {
 
   input[type="submit"] {
     float: none;
+  }
+
+  .modal-container {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 5% 10%;
+    background-color: #c1c7d0e0;
+    display: none;
+  }
+
+  .modal {
+    padding: 2rem;
+  }
+
+  .modal-content .fa-xmark {
+    padding: 2rem;
+  }
+
+  .modal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .flex-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .tech-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .desc-desk {
+    max-width: 70%;
   }
 }
