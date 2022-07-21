@@ -151,19 +151,26 @@ const displayPopupModal = (i) => {
         </ul>
         <div class="one"><img src="${projectDetail[i].imageMobile}" alt="Portfolio Screenshot"></div>
         <div class="two"><img src="${projectDetail[i].image}" alt="Portfolio Screenshot"></div>
-        <p>${projectDetail[i].popDescription}</p>
-        <div class="categories">
-          <ul>
-            ${tech}
-          </ul>
-        </div>
-        <div class="modal-buttons">
-          <button>
-          <a href="${projectDetail[i].seeLive}">See Live<i class="fas fa-long-arrow-right"></i></a>
-          </button>
-          <button>
-          <a href="${projectDetail[i].seeSource}">See Source<i class="fab fa-github" aria-hidden="true"></i></a>
-          </button>
+        
+        <div class="flex-bottom">
+          <p class="desc-desk">${projectDetail[i].popDescription}</p>
+                    
+          <div class="tech-and-buttons">  
+            <div class="categories">
+              <ul>
+                ${tech}
+              </ul>
+            </div>
+            <hr/>
+            <div class="modal-buttons">
+              <button>
+              <a href="${projectDetail[i].seeLive}">See Live<i class="fas fa-external-link"></i></a>
+              </button>
+              <button>
+              <a href="${projectDetail[i].seeSource}">See Source<i class="fab fa-github" aria-hidden="true"></i></a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>  `;
