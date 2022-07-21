@@ -128,15 +128,11 @@ for (let i = 0; i < projectDetail.length; i += 1) {
 const popupModal = document.querySelector('#portfolioPopup');
 const displayPopupModal = (i) => {
   let tech = '';
-  let techPop = '';
+
   let experienceList = '';
 
   for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
     tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
-  }
-
-  for (let j = 0; j < projectDetail[i].popupTech.length; j += 1) {
-    techPop += `<li class="lang-group" id="mobile">${projectDetail[i].popupTech[j]}</li>`;
   }
 
   for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
@@ -174,8 +170,3 @@ const displayPopupModal = (i) => {
   popupModal.style.display = 'block';
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
-
-const closeModal = document.querySelector('#portfolioPopup');
-const closePopupModal = () => {
-  closeModal.style.display = 'none';
-};
