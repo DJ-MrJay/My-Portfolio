@@ -185,6 +185,7 @@ function errorMessage(elemId, requiredMessage) {
 }
 
 /* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
 
 function validationForm() {
   const fullname = document.form.fullname.value;
@@ -222,7 +223,7 @@ function validationForm() {
   if (message === '') {
     errorMessage('messageError', '*Please type a message');
   } else {
-    const messageRegex = /^[a-zA-Z\s]+$/;
+    const messageRegex = /[\s\S]+/g;
     if (!messageRegex.test(message)) {
       errorMessage('messageError', '*Please type a valid message');
     } else {
@@ -234,5 +235,26 @@ function validationForm() {
   if ((nameError || emailError || messageError === true)) {
     return false;
   }
-  return false;
+}
+
+// Store Form Data Locally
+
+const form = document.querySelector('form');
+const userData = {
+  name: document.getElementById('fname').value,
+  email: document.getElementById('email').value,
+  message: document.getElementById('msg').value,
+};
+
+localStorage.setItem('userData', JSON.stringify(userData));
+form.reset();
+
+// Retrieve Form Data
+
+if (localStorage.getItem('userData') !== undefined) {
+  const userData = JSON.parse(localStorage.getItem('userData'));
+
+  form.elements.fullname.value = userData.name;
+  form.elements.email.value = userData.email;
+  form.elements.message.value = userData.message;
 }
