@@ -184,8 +184,10 @@ function errorMessage(elemId, requiredMessage) {
   document.getElementById(elemId).innerHTML = requiredMessage;
 }
 
+/* eslint-disable no-unused-vars */
+
 function validationForm() {
-  const fName = document.form.fname.value;
+  const fullname = document.form.fullname.value;
   const email = document.form.email.value;
   const message = document.form.message.value;
 
@@ -193,11 +195,11 @@ function validationForm() {
   let emailError = true;
   let messageError = true;
 
-  if (fName === '') {
+  if (fullname === '') {
     errorMessage('nameError', '*Please enter your full name');
   } else {
     const nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    if (!nameRegex.test(fName)) {
+    if (!nameRegex.test(fullname)) {
       errorMessage('nameError', '*Please enter first and last names');
     } else {
       errorMessage('nameError', '');
@@ -232,4 +234,5 @@ function validationForm() {
   if ((nameError || emailError || messageError === true)) {
     return false;
   }
+  return false;
 }
