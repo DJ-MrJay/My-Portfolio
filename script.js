@@ -258,4 +258,3 @@ if (localStorage.getItem('userData') !== undefined) {
   form.elements.email.value = userData.email;
   form.elements.message.value = userData.message;
 }
-
