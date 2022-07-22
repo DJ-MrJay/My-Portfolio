@@ -248,3 +248,14 @@ const userData = {
 
 localStorage.setItem('userData', JSON.stringify(userData));
 form.reset();
+
+// Retrieve Form Data
+
+if (localStorage.getItem('userData') !== undefined) {
+  const userData = JSON.parse(localStorage.getItem('userData'));
+
+  form.elements.fullname.value = userData.name;
+  form.elements.email.value = userData.email;
+  form.elements.message.value = userData.message;
+}
+
