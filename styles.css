@@ -69,9 +69,7 @@ nav a {
 }
 
 .logo {
-  height: 50px;
-  transform: rotate(360deg);
-  transition-duration: 1s;
+  width: 200px;
 }
 
 .mobile-menu {
@@ -558,6 +556,10 @@ input[type="submit"]:hover {
 
   .mobile-menu {
     display: none;
+  }
+
+  .logo {
+    width: 250px;
   }
 
   .desktop-menu {
