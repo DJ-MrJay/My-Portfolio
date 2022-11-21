@@ -34,8 +34,8 @@ const projectDetail = [{
   technologies: ['javascript', 'tailwind css', 'react', 'redux'],
   popupTech: ['javascript', 'tailwind css', 'react', 'redux', 'github'],
   image: 'images/Screenshot-18.png',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
-  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+  seeLive: 'https://dj-mrjay.github.io/space-travelers-hub/',
+  seeSource: 'https://github.com/DJ-MrJay/space-travelers-hub',
 },
 {
   title: 'Math Magicians',
@@ -45,8 +45,8 @@ const projectDetail = [{
   technologies: ['javascript', 'css3', 'react', 'redux'],
   popupTech: ['javascript', 'css3', 'react', 'redux', 'github'],
   image: 'images/Screenshot-19.png',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
-  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+  seeLive: 'https://github.com/DJ-MrJay/math-magicians',
+  seeSource: 'https://github.com/DJ-MrJay/math-magicians',
 },
 {
   title: 'Bookstore CMS',
@@ -56,7 +56,7 @@ const projectDetail = [{
   technologies: ['javascript', 'css3', 'react', 'redux'],
   popupTech: ['javascript', 'css3', 'react', 'redux', 'github'],
   image: 'images/Screenshot-20.png',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeLive: 'https://dj-mrjay.github.io/bookstore/',
   seeSource: 'https://github.com/DJ-MrJay/bookstore',
 },
 {
