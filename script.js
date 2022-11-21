@@ -27,60 +27,48 @@ menuItem.forEach(
 // 'Works' Section Details
 
 const projectDetail = [{
-  title: 'Tonic',
-  exprience: ['CANOPY', 'Back End Dev', '2015'],
-  desription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  title: 'Space Traveler\'s Hub',
+  experience: ['HUB', 'Back End Dev', '2022'],
+  desription: 'A single page app to view and read about the SpaceX latest rockets and missions.',
+  popDescription: 'This educational project\'s requirements include building a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.',
+  technologies: ['javascript', 'tailwind css', 'react', 'redux'],
+  popupTech: ['javascript', 'tailwind css', 'react', 'redux', 'github'],
+  image: 'images/Screenshot-18.png',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+},
+{
+  title: 'Math Magicians',
+  experience: ['Back End Dev', '2022'],
+  desription: 'A web app for all fans of mathematics.',
+  popDescription: 'Math Magicians is a website for all fans of mathematics. It allows users to do simple calculations, and read a random math-related quote.',
+  technologies: ['javascript', 'css3', 'react', 'redux'],
+  popupTech: ['javascript', 'css3', 'react', 'redux', 'github'],
+  image: 'images/Screenshot-19.png',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+},
+{
+  title: 'Bookstore CMS',
+  experience: ['BOOKSTORE', 'Back End Dev', '2022'],
+  desription: 'A web app that allows you to display a list of books.',
+  popDescription: 'Bookstore is a web app that allows you to display a list of books, add and remove books to and from the list. It is built using react and redux.',
+  technologies: ['javascript', 'css3', 'react', 'redux'],
+  popupTech: ['javascript', 'css3', 'react', 'redux', 'github'],
+  image: 'images/Screenshot-20.png',
+  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
+  seeSource: 'https://github.com/DJ-MrJay/bookstore',
+},
+{
+  title: 'Peace Concert',
+  experience: ['CONCERT', 'Lead Developer', '2022'],
+  desription: 'A promotion and booking website for the upcoming music concert to promote world peace.',
+  popDescription: 'This website is a promotion website for the upcoming music concert to promote world peace. The concert will be held in Nairobi. Information about the concert schedule, performances and ticketing can be found throughout the site. The website content is entirely fictional.',
   technologies: ['html', 'css', 'javascript'],
-  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-  image: 'images/snapshoot-portfolio-5.svg',
-  imageMobile: 'images/snapshoot-portfolio-1.svg',
-  imagePopup: 'images/snapshoot-portfolio-5.svg',
-  imageMobilePopup: 'images/snapshoot-portfolio-1.svg',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
-  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
-},
-{
-  title: 'Multi-Post Stories',
-  exprience: ['FACEBOOK', 'Back End Dev', '2015'],
-  desription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-  image: 'images/snapshoot-portfolio-6.svg',
-  imageMobile: 'images/snapshoot-portfolio-2.svg',
-  imagePopup: 'images/snapshoot-portfolio-6.svg',
-  imageMobilePopup: 'images/snapshoot-portfolio-2.svg',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
-  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
-},
-{
-  title: 'Facebook 360',
-  exprience: ['FACEBOOK', 'Back End Dev', '2015'],
-  desription: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-  image: 'images/snapshoot-portfolio-7.svg',
-  imageMobile: 'images/snapshoot-portfolio-3.svg',
-  imagePopup: 'images/snapshoot-portfolio-7.svg',
-  imageMobilePopup: 'images/snapshoot-portfolio-3.svg',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
-  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
-},
-{
-  title: 'Uber Navigation',
-  exprience: ['UBER', 'Lead Developer', '2018'],
-  desription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.',
-  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-  image: 'images/snapshoot-portfolio-8.svg',
-  imageMobile: 'images/snapshoot-portfolio-4.svg',
-  imagePopup: 'images/snapshoot-portfolio-8.svg',
-  imageMobilePopup: 'images/snapshoot-portfolio-4.svg',
-  seeLive: 'https://dj-mrjay.github.io/My-Portfolio/',
-  seeSource: 'https://github.com/DJ-MrJay/My-Portfolio',
+  popupTech: ['html', 'css', 'javaScript', 'github'],
+  image: 'images/Screenshot-21.png',
+  seeLive: 'https://dj-mrjay.github.io/Capstone-1/',
+  seeSource: 'https://github.com/DJ-MrJay/Capstone-1',
 },
 ];
 
@@ -94,21 +82,19 @@ for (let i = 0; i < projectDetail.length; i += 1) {
     tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
   }
 
-  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
-    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].exprience[k]}</a></li>`;
-    if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="images/dot.svg" alt="dot"></a></li>';
+  for (let k = 0; k < projectDetail[i].experience.length; k += 1) {
+    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].experience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].experience[k]}</a></li>`;
+    if (k !== projectDetail[i].experience.length - 1) experienceList += '<li><a href="#"><img src="images/dot.svg" alt="dot"></a></li>';
   }
   document.querySelector('#portfolio').innerHTML += `
   <div class="card">
-    <div class="one"><img src="${projectDetail[i].imageMobile}" alt="Portfolio Screenshot"></div>
-    <div class="two"><img src="${projectDetail[i].image}" alt="Portfolio Screenshot"></div>
+    <div class="image-container">
+      <div><img src="${projectDetail[i].image}" alt="Project Screenshot"></div>
+    </div>
     <div class="card-text" >
-      <div class="one">
+      <div>
         <h2>${projectDetail[i].title}</h2>
       </div>
-      <div class="two">
-        <h2>${projectDetail[i].title}</h2>
-      </div>        
       <ul class="flex-breadcrumbs">
         ${experienceList}
       </ul>
@@ -118,7 +104,7 @@ for (let i = 0; i < projectDetail.length; i += 1) {
           ${tech}
         </ul>
       </div>
-      <button data-index="${i}" class="see-project">See Project</button>
+      <button data-index="${i}" class="see-project">Read More</button>
     </div>
   </div>`;
 }
@@ -135,27 +121,27 @@ const displayPopupModal = (i) => {
     tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
   }
 
-  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
-    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].exprience[k]}</a></li>`;
-    if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="images/dot.svg" alt="dot"></a></li>';
+  for (let k = 0; k < projectDetail[i].experience.length; k += 1) {
+    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].experience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].experience[k]}</a></li>`;
+    if (k !== projectDetail[i].experience.length - 1) experienceList += '<li><a href="#"><img src="images/dot.svg" alt="dot"></a></li>';
   }
   document.querySelector('#portfolioPopup').innerHTML = `
-  
+
     <div class="modal">
       <div class="modal-content">
         <h2>${projectDetail[i].title}</h2>
         <span><a onclick="closePopupModal()" href="" class="close-popup"><i class="fa-solid fa-xmark fa-2x" id="closemodal"></i></a></span>
-                      
+
         <ul class="flex-breadcrumbs">
           ${experienceList}
         </ul>
-        <div class="one"><img src="${projectDetail[i].imageMobile}" alt="Portfolio Screenshot"></div>
-        <div class="two"><img src="${projectDetail[i].image}" alt="Portfolio Screenshot"></div>
-        
+        <div class="modal-image-container">
+          <div><img src="${projectDetail[i].image}" alt="Portfolio Screenshot"></div>
+        </div>
         <div class="flex-bottom">
           <p class="desc-desk">${projectDetail[i].popDescription}</p>
-                    
-          <div class="tech-and-buttons">  
+
+          <div class="tech-and-buttons">
             <div class="categories">
               <ul>
                 ${tech}

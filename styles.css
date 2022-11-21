@@ -189,10 +189,9 @@ nav a {
 }
 
 .fa-twitter:hover,
-.fa-facebook:hover,
+.fa-angellist:hover,
 .fa-linkedin-in:hover,
-.fa-github:hover,
-.fa-youtube:hover {
+.fa-github:hover {
   transform: scale(1.2);
   transition: all 0.3s ease-in-out;
 }
@@ -210,11 +209,22 @@ nav a {
   margin-right: 7%;
 }
 
-.two,
+/* .two,
 .four,
 .six,
 .eight {
   display: none;
+} */
+
+img {
+  width: 100%;
+}
+
+.image-container {
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  padding: 20px 2px;
+  height: 100%;
 }
 
 img {
@@ -223,8 +233,14 @@ img {
   object-fit: contain;
 }
 
+.modal-image-container {
+  background-color: #e0e0e0;
+  padding: 1px;
+  height: 100%;
+}
+
 .card img:hover {
-  transform: scale(0.95);
+  transform: scale(0.98);
   transition-duration: 0.4s;
 }
 
@@ -494,6 +510,11 @@ input[type="submit"]:hover {
   display: none;
 }
 
+.image-container {
+  padding: 30px 2px;
+
+}
+
 .modal {
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -585,7 +606,6 @@ input[type="submit"]:hover {
 
   .desktop-menu a:hover,
   .desktop-menu a:focus {
-    font-weight: 600;
     color: #6070ff;
   }
 
@@ -636,6 +656,11 @@ input[type="submit"]:hover {
     object-fit: contain;
   }
 
+  .modal-image-container {
+    padding: 2px;
+    height: 100%;
+  }
+
   .card-text {
     display: flex;
     flex-direction: column;
@@ -654,9 +679,9 @@ input[type="submit"]:hover {
     flex-direction: row;
   }
 
-  .one {
+  /* .one {
     display: none;
-  }
+  } */
 
   .about {
     margin-top: 20%;
