@@ -1,36 +1,42 @@
-# My-Portfolio
-This is a page about me and what I do.
+# My Portfolio
 
-## Built With
+Welcome to my portfolio! This is a space where you can learn more about me and what I do.
 
-- HTML, CSS, and JavaScript.
+## Technologies Used
+
+This portfolio was built using the following technologies:
+
+- HTML
+- CSS
+- JavaScript
 
 ## Getting Started
-To setup, follow these simple steps.
 
-- Clone the [repo](https://github.com/DJ-MrJay/My-Portfolio) or download the .zip file. 
-- Run with live server or simply open index.html with your browser.
+To set up and explore this portfolio, follow these simple steps:
 
-## Author
+1. Clone the repository: [GitHub Repo](https://github.com/DJ-MrJay/My-Portfolio) or download the .zip file.
+2. Run the portfolio using a live server or simply open `index.html` in your web browser.
 
-- GitHub: [@githubhandle](https://github.com/DJ-MrJay)
-- Twitter: [@twitterhandle](https://twitter.com/jonah_wambua)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mr-jay/)
+## About the Author
 
-## Contributors
+Connect with me on various platforms:
 
-Contributions and feature requests are welcome!
+- [GitHub Profile](https://github.com/DJ-MrJay)
+- [Twitter Profile](https://twitter.com/jonah_wambua)
+- [LinkedIn Profile](https://www.linkedin.com/in/mr-jay/)
 
-- Check out the [contributors](https://github.com/DJ-MrJay/My-Portfolio/graphs/contributors) to this project.
+## Contributions
 
-## Show your support
+Contributions and feature requests are always welcome! Check out the [list of contributors](https://github.com/DJ-MrJay/My-Portfolio/graphs/contributors) to this project.
 
-Give ⭐️⭐️⭐️⭐️⭐️ if you like this project!
+## Support
 
-## Github Page
+If you find this project interesting or helpful, please consider showing your support by giving it a ⭐️⭐️⭐️⭐️⭐️ on GitHub.
 
-This project is published on Github Pages at https://dj-mrjay.github.io/My-Portfolio/
+## GitHub Pages
+
+You can also access this portfolio on GitHub Pages at [https://dj-mrjay.github.io/My-Portfolio/](https://dj-mrjay.github.io/My-Portfolio/).
 
 ## License
 
-This project is [MIT](./MIT.md) licensed.
+This project is licensed under the [MIT License](./MIT.md). Feel free to explore and use the code as needed.
