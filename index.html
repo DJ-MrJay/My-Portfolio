@@ -3,228 +3,468 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jonah | My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Jonah Wambua is a Creative Designer and Full-Stack Developer from Nairobi, Kenya.">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+
+  <!-- Bootstrap icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>Jonah Wambua | Portfolio</title>
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="#"><img src="images/jonahwambua.svg" alt="Logo"></a>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo">Jonah Wambua</span>
         </div>
-
-        <ul class="menu">
-          <li><a class="menu-item" href="#portfolio">Portfolio</a></li>
-          <li><a class="menu-item" href="#about">About</a></li>
-          <li><a class="menu-item" href="#contact">Contact</a></li>
-        </ul>
-
-        <ul class="desktop-menu">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="mobile-menu">
-          <a class="menu-icon" href="#"><i class="fas fa-bars fa-2x" aria-hidden="true"></i><span
-              class="sr-only">Menu</span></a>
-          <a class="close-icon" href="#"><i class="fa-solid fa-xmark fa-2x" aria-hidden="true"></i><span
-              class="sr-only">Close</span></a>
+        <div class="header-text">
+          <h1>
+            <p class="animate-text-1">Creative Designer.</p>
+            <p class="animate-text-2">Full-Stack Software Developer.</p>
+          </h1>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="home">
-        <h1>I'm Jonah.<br />Glad to see you!</h1>
-
-        <div class="description">
-          <p>
-            I’m a software developer! I can help you build a product feature
-            or website. Look through some of my work and experience! If you
-            like what you see and have a project you need coded, don’t
-            hesitate to contact me.
-          </p>
+        <h2 class="animate-subtitle">
+          I build websites and web apps with a focus on responsiveness and accessibility.
+        </h2>
+        <div class="scroll-button animate-scroll" tabindex="0">
+          Let's Begin&nbsp;<div class="arrow"><i class="bi bi-arrow-down"></i></div>
         </div>
+      </div>
+    </div>
+  </header>
 
-        <div class="connect">
-          <p href="#">LET'S CONNECT</p>
-        </div>
-
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        <img src="images/jonahwambua-light.svg" alt="Logo" height="20">
+      </a>
+      <div class="nav-links">
+        <a href="#about" class="link">about</a>
+        <a href="#works" class="link">works</a>
+        <a href="#articles" class="link">articles</a>
+        <a href="#contacts" class="link">contacts</a>
         <div class="social-media">
-          <ul>
-            <li>
-              <a href="https://twitter.com/jonah_wambua" target="_blank">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-                <span class="sr-only">Twitter Page</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://angel.co" target="_blank">
-                <i class="fab fa-angellist" aria-hidden="true"></i>
-                <span class="sr-only">AngelList Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                <span class="sr-only">LinkedIn Page</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/DJ-MrJay" target="_blank">
-                <i class="fab fa-github" aria-hidden="true"></i>
-                <span class="sr-only">GitHub Page</span>
-              </a>
-            </li>
-          </ul>
+          <a href="https://github.com/DJ-MrJay" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>
+          <a href="https://twitter.com/jonah_wambua" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a href="https://medium.com/@djmrjay" title="Medium">
+            <i class="demo-icon icon-medium"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jonah-wambua/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
         </div>
-      </section>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i class="demo-icon icon-cog"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="about">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Hello. I'm Jonah Wambua</h2>
+          <div class="section-subtitle">
+            <p>
+              I’m a Kenyan creative designer and a full-stack software developer, crafting websites and web
+              apps since 2015.</p>
+            <p>My work emphasizes responsive design, accessibility, and captivating aesthetics.
+            <p>Additionally, I offer freelance graphic design and UI/UX expertise. Music fuels my passion and
+              creativity.</p>
+            <p>Let’s create something amazing together!</p>
+          </div>
+          <div class="section-link">
+            <a href="about" class="link-btn">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="works" id="portfolio">
-      </section>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
 
-      <section class="modal-container" id="portfolioPopup">
-      </section>
-
-      <section class="about" id="about">
-        <div class="about-body">
-          <h1>About<br />Myself</h1>
-
-          <p>
-            I’m a software developer! I can help you build a product feature
-            or website. Look through some of my work and experience! If you
-            like what you see and have a project you need coded, don’t
-            hesitate to contact me.
+    <section id="works">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Work</h2>
+          <p class="section-subtitle">
+            I do most of my work under contractual agreements but I also freelance from time to time or build projects
+            for fun.
+            Here are some of my most recent projects:
           </p>
-
-          <div class="connect">
-            <a href="#">LET'S CONNECT</a>
-          </div>
-
-          <div class="social-media">
-            <ul>
-              <li>
-                <a href="https://twitter.com/jonah_wambua" target="_blank">
-                  <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter Page</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://angel.co" target="_blank">
-                  <i class="fab fa-angellist" aria-hidden="true"></i>
-                  <span class="sr-only">AngelList Profile</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank">
-                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn Page</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/DJ-MrJay" target="_blank">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">GitHub Page</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div><button type="button">Get my resume</button></div>
         </div>
-
-        <div class="about-skills">
-          <ul>
-            <li class="accordion-btn">
-              <div>
-                <h3>Languages</h3>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-
-              <div class="accordion">
-                <ul>
-                  <li class="accordion-item">
-                    <div class="language-icon">
-                      <img src="images/JavaScript_logo.svg" alt="JavaScript Logo" />
-                    </div>
-                    JavaScript
-                  </li>
-                  <li class="accordion-item">
-                    <div class="language-icon">
-                      <img src="images/HTML5_logo.svg" alt="HTML5 Logo" />
-                    </div>
-                    HTML
-                  </li>
-                  <li class="accordion-item">
-                    <div class="language-icon">
-                      <img src="images/CSS3_logo.svg" alt="CSS3 Logo" />
-                    </div>
-                    CSS
-                  </li>
+        <div class="project-container">
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="images/brand-champ.png" alt="Brandchamp Website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://brandchamp.co.ke" target="_blank" rel="noopener"> Brandchamp Marketing</a>
+                </h3>
+                <div class="project-description">
+                  <p>I built this website for a brand marketing client to improve their company's visibility. They
+                    wanted a WordPress website with a custom layout so I used an existing WordPress theme and tweaked it
+                    with additional plugins and custom CSS.</p>
+                </div>
+                <ul class="project-tags" title="Technologies">
+                  <li class="tag">Wordpress</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">Elementor</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">HTML</li>
                 </ul>
+                <div class="project-links">
+                  <a href="https://brandchamp.co.ke" target="_blank" rel="noopener" class="link-btn">View Site</a>
+                </div>
               </div>
-            </li>
-
-            <li class="accordion-btn">
-              <div>
-                <h3>Frameworks</h3>
-                <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="images/techxpress.png" alt="Techxpress Website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://techxpress.co.ke" target="_blank" rel="noopener">
+                    Techxpress Consultants
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I was contracted to build this website for a tech company that offers IT services on a consultation
+                    basis. It was a simple 4-page website that I created with Joomla, a popular CMS, and it took me
+                    three days to design and launch.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">Joomla</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">HTML</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://techxpress.co.ke" target="_blank" rel="noopener" class="link-btn">View
+                    Site</a>
+                </div>
               </div>
-              <hr />
-            </li>
-
-            <li class="accordion-btn">
-              <div>
-                <h3>Skills</h3>
-                <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="images/annual-concert.png" alt="Annual Concert">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  Annual Concert
+                </h3>
+                <div class="project-description">
+                  <p>
+                    This project is based on a fictional promotion website for an upcoming music concert to promote
+                    world peace. The project was an educational exercise at Microverse School of Coding. Information
+                    about the concert schedule, performances and ticketing can be found throughout the site.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">HTML</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/DJ-MrJay/Capstone-1" target="_blank" rel="noopener"
+                    class="link-btn">Source Code</a>
+                </div>
               </div>
-              <hr />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="form" id="contact">
-        <div class="form-container">
-          <h1>Contact me</h1>
-          <p>
-            If you have an application you are interested in developing, a
-            feature that you need built, or a project that needs coding, I’d
-            love to help with it.
-          </p>
-
-          <div>
-            <form action="https://formspree.io/f/xrgjwepv" method="post" onsubmit="return validationForm()" name="form">
-              <input type="text" id="fname" name="fullname" placeholder="Your name?" maxlength="30">
-
-              <input type="email" id="email" name="email" placeholder="Your email address?">
-
-              <textarea id="msg" name="message" placeholder="Write your message here" maxlength="500"></textarea>
-
-              <input type="submit" value="Get In Touch">
-            </form>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="images/bookstore-CMS.png" alt="Bookstore CMS">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  Bookstore CMS
+                </h3>
+                <div class="project-description">
+                  <p>
+                    Bookstore is a web app that allows you to display a list of books, add and remove books to and from
+                    the list. It is built using react and redux. The project was an educational solo exercise at
+                    Microverse School of Coding.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">HTML</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">React</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">Redux</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/DJ-MrJay/Awesome-books" target="_blank" rel="noopener"
+                    class="link-btn">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="images/super-wheels.png" alt="Super Wheels">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  Super Wheels Car Rentals
+                </h3>
+                <div class="project-description">
+                  <p>
+                    The Super Wheels Car Rentals is a React front-end and Ruby on Rails back-end web app that manages
+                    appointments for booking test drives for cars. This was a collaborative project at Microverse School
+                    of Coding. The Rails API provides endpoints for allowing users to create, retrieve, update, and
+                    delete cars, make reservations, authenticate users.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">React</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">Redux</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">Ruby on Rails</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">&#x2022;</li>
+                  <li class="tag">Bootstrap</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/Itswali/Rental-Cars" target="_blank" rel="noopener"
+                    class="link-btn">Source Code</a>
+                  <a href="https://supercarsrentals.onrender.com" target="_blank" rel="noopener" class="link-btn">View
+                    Live</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="error">
-          <div id="nameError"></div>
-          <div id="emailError"></div>
-          <div id="messageError"></div>
+        <div class="section-link scroll-in">
+          <a href="https://github.com/DJ-MrJay?tab=repositories" class="link-btn">View All Projects</a>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
 
-  <script src="./script.js"></script>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>
+
+    <section id="articles">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Articles</h2>
+          <p class="section-subtitle">
+            I have written a few tech articles on Medium on topics that I found interesting and I would love to share
+            them here:
+          </p>
+        </div>
+        <div class="articles-container">
+          <a href="https://medium.com/@djmrjay/css3-unleashing-the-magic-in-web-and-app-development-cf7848792987"
+            target="_blank" rel="noopener">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <img src="images/articles/css3-cover.jpg" alt="CSS3 Magic">
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  MEDIUM <i class="bi bi-medium"></i>
+                </div>
+                <h3 class="article-title">
+                  CSS3: Unleashing the Magic!
+                </h3>
+                <div class="article-description">
+                  <p>
+                    In the ever-evolving world of web and app development, CSS3 stands as a true magician, conjuring up
+                    stunning visuals, enhancing user experiences, and bringing creativity to life. This article delves
+                    into the enchanting world of CSS3 and explores how it continues to unleash its magic, shaping the
+                    digital landscape like never before.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://medium.com/@djmrjay/designing-success-the-power-of-aesthetics-and-captivating-ui-ux-in-web-development-eb6fd3b90ee2"
+            target="_blank" rel="noopener">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <img src="images/articles/ui-ux.jpg" alt="CSS3 Magic">
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  MEDIUM <i class="bi bi-medium"></i>
+                </div>
+                <h3 class="article-title">
+                  The Power of Captivating UI/UX
+                </h3>
+                <div class="article-description">
+                  <p>
+                    In the digital age, where user experience reigns supreme, the intersection of aesthetics and
+                    captivating UI/UX in web development is a critical catalyst for success. In this article, we explore
+                    the transformative power of design in web development, exploring how aesthetics and user-centric
+                    interfaces can drive unparalleled success in the online landscape.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://medium.com/@djmrjay/advice-for-a-beginner-in-software-development-9460010e5464"
+            target="_blank" rel="noopener">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <img src="images/articles/beginner-dev.jpg" alt="CSS3 Magic">
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  MEDIUM <i class="bi bi-medium"></i>
+                </div>
+                <h3 class="article-title">
+                  Software Development Beginners
+                </h3>
+                <div class="article-description">
+                  <p>
+                    Embarking on a journey into the world of software development can be both exciting and daunting.
+                    Whether you're a coding novice or someone looking to switch careers, this article is your compass
+                    for navigating the vast landscape of software development. Here, I have outlined indispensable
+                    advice to help you chart your course and set sail on your coding adventure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="https://medium.com/@djmrjay" target="_blank" class="link-btn">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Contacts</h2>
+          <p class="section-subtitle">
+            If you have an application you are interested in developing, a feature that you need built, or a project
+            that needs coding, I’d love to help with it.
+          </p>
+        </div>
+
+        <div class="form-container">
+          <form action="https://formspree.io/f/xrgjwepv" method="post" onsubmit="return validationForm()" name="form">
+            <div class="name-email-inputs">
+              <input type="text" id="fname" name="fullname" placeholder="Your name?" maxlength="30">
+              <input type="email" id="email" name="email" placeholder="Your email address?">
+            </div>
+            <textarea id="msg" name="message" placeholder="Write your message here" maxlength="500"></textarea>
+            <input type="submit" value="Get In Touch">
+          </form>
+
+          <div class="error">
+            <div id="nameError"></div>
+            <div id="emailError"></div>
+            <div id="messageError"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="index-footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/DJ-MrJay" target="_blank" title="Github">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://twitter.com/jonah_wambua" target="_blank" title="Twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://medium.com/@djmrjay" target="_blank" title="Medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; <span id="currentYear"></span>. Designed with <span class="heart">&hearts;</span> by Jonah Wambua
+      </div>
+    </div>
+  </footer>
 </body>
+
+<script src="./js/index.js"></script>
+<script src="./js/landing-page.js"></script>
 
 </html>
