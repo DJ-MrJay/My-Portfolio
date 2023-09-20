@@ -2,7 +2,6 @@
 @import "./utilities.css";
 @import "./animations.css";
 @import "../fontello/css/fontello.css";
-@import "./coffee.css";
 
 body {
   margin: 0;
@@ -12,6 +11,11 @@ body {
   color: var(--text-color);
   font-family: "Inter", sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
 
 body.no-scroll {
   overflow: hidden;
@@ -298,6 +302,21 @@ nav .container {
 .wave-border {
   height: 150px;
   overflow: hidden;
+}
+
+.wave-border svg {
+  height: 100%;
+  width: 100%;
+}
+
+.wave-border path {
+  stroke: none;
+  fill: var(--shade-100);
+}
+
+.wave-border svg .neon-path {
+  stroke: var(--neon-color);
+  fill: none;
 }
 
 .straight-border {

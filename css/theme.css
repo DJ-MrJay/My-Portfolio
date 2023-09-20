@@ -1,15 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
-
 :root,
 :root.light {
   --background-color: #fafafa;
-  --text-color: #000;
+  --text-color: #0d1926;
   --shade-100: #efefef;
   --shade-300: #8a8a8a;
   --shade-500: #3d3d3d;
   --secondary-color: #ccd0be;
   --grey-color: #c2bfbc;
   --grey-text: #595959;
+}
+
+:root.light header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff23;
+}
+
+:root.light .light-logo {
+  display: none;
 }
 
 :root.dark {
@@ -21,6 +33,20 @@
   --secondary-color: #a67a59;
   --grey-color: #303f50;
   --grey-text: #cfd8e2;
+}
+
+:root.dark header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d19265b;
+}
+
+:root.dark .dark-logo {
+  display: none;
 }
 
 #light-select .color.text {

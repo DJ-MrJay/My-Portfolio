@@ -34,10 +34,10 @@
           </h1>
         </div>
         <h2 class="animate-subtitle">
-          I build websites and web apps with a focus on responsiveness and accessibility.
+          I create websites and web applications, prioritizing responsiveness and accessibility.
         </h2>
         <div class="scroll-button animate-scroll" tabindex="0">
-          Let's Begin&nbsp;<div class="arrow"><i class="bi bi-arrow-down"></i></div>
+          Dive In&nbsp;<div class="arrow"><i class="bi bi-arrow-down"></i></div>
         </div>
       </div>
     </div>
@@ -46,7 +46,8 @@
   <nav>
     <div class="container">
       <a href="/" class="nav-logo" title="Back to Homepage">
-        <img src="images/jonahwambua-light.svg" alt="Logo" height="20">
+        <img class="light-logo" src="images/jonahwambua-light.svg" alt="Logo" height="20">
+        <img class="dark-logo" src="images/jonahwambua.svg" alt="Logo" height="20">
       </a>
       <div class="nav-links">
         <a href="#about" class="link">about</a>
@@ -69,13 +70,13 @@
         </div>
       </div>
       <div class="nav-controls">
-        <button id="menu-display" title="Show Menu" class="hamburger"></button>
-        <button id="theme-display" title="Select a color scheme" class="control">
+        <button id="menu-display" type="button" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" type="button" title="Select a color scheme" class="control">
           <i class="demo-icon icon-cog"></i>
         </button>
       </div>
       <div class="theme-container">
-        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+        <button class="light theme-select" id="light-select" type="button" onclick="setTheme('light')" aria-label="Set light theme">
           <div class="theme-label">
             Light
           </div>
@@ -87,7 +88,7 @@
             <div class="color text"></div>
           </div>
         </button>
-        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+        <button class="dark theme-select" id="dark-select" type="button" onclick="setTheme('dark')"
           onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
           <div class="theme-label">
             Dark
@@ -107,7 +108,7 @@
     <section id="about">
       <div class="container inner-container">
         <div class="intro scroll-in">
-          <h2 class="section-title">Hello. I'm Jonah Wambua</h2>
+          <h2 class="section-title">Hello.</h2>
           <div class="section-subtitle">
             <p>
               I’m a Kenyan creative designer and a full-stack software developer, crafting websites and web
@@ -118,47 +119,43 @@
             <p>Let’s create something amazing together!</p>
           </div>
           <div class="section-link">
-            <a href="about" class="link-btn">More About Me</a>
+            <a href="https://docs.google.com/document/d/1_IGWd4LabaNtwFG3Jqg2o0BTAnGL0iwxKnI9eLnHkU8/edit?usp=sharing" class="link-btn">My Résumé</a>
           </div>
         </div>
       </div>
     </section>
 
     <div class="wave-border top">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style="stroke: none; fill: var(--shade-100)"></path>
-        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
-          style="stroke: var(--neon-color);fill: none;"></path>
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"></path>
       </svg>
     </div>
 
     <section id="works">
       <div class="container">
         <div class="title-container scroll-in">
-          <h2 class="section-title">Work</h2>
+          <h2 class="section-title">Works</h2>
           <p class="section-subtitle">
             I do most of my work under contractual agreements but I also freelance from time to time or build projects
             for fun.
-            Here are some of my most recent projects:
+            Here are some of my most recent works:
           </p>
         </div>
-        <div class="project-container">
-          <div class="project scroll-in">
-            <div class="project-image">
+        <div class="work-container">
+          <div class="work scroll-in">
+            <div class="work-image">
               <img src="images/brand-champ.png" alt="Brandchamp Website">
             </div>
-            <div class="project-content-container">
-              <div class="project-content">
-                <h3 class="project-title">
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">
                   <a href="https://brandchamp.co.ke" target="_blank" rel="noopener"> Brandchamp Marketing</a>
                 </h3>
-                <div class="project-description">
-                  <p>I built this website for a brand marketing client to improve their company's visibility. They
-                    wanted a WordPress website with a custom layout so I used an existing WordPress theme and tweaked it
-                    with additional plugins and custom CSS.</p>
+                <div class="work-description">
+                  <p>I developed this website for a brand marketing client, enhancing their company's visibility. They requested a custom WordPress site, so I modified an existing WordPress theme, incorporating additional plugins and custom CSS.</p>
                 </div>
-                <ul class="project-tags" title="Technologies">
+                <ul class="work-tags" title="Technologies">
                   <li class="tag">Wordpress</li>
                   <li class="tag">&#x2022;</li>
                   <li class="tag">Elementor</li>
@@ -167,31 +164,31 @@
                   <li class="tag">&#x2022;</li>
                   <li class="tag">HTML</li>
                 </ul>
-                <div class="project-links">
+                <div class="work-links">
                   <a href="https://brandchamp.co.ke" target="_blank" rel="noopener" class="link-btn">View Site</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="project scroll-in">
-            <div class="project-image">
+          <div class="work scroll-in">
+            <div class="work-image">
               <img src="images/techxpress.png" alt="Techxpress Website">
             </div>
-            <div class="project-content-container">
-              <div class="project-content">
-                <h3 class="project-title">
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">
                   <a href="https://techxpress.co.ke" target="_blank" rel="noopener">
                     Techxpress Consultants
                   </a>
                 </h3>
-                <div class="project-description">
+                <div class="work-description">
                   <p>
                     I was contracted to build this website for a tech company that offers IT services on a consultation
                     basis. It was a simple 4-page website that I created with Joomla, a popular CMS, and it took me
                     three days to design and launch.
                   </p>
                 </div>
-                <ul class="project-tags">
+                <ul class="work-tags">
                   <li class="tag">Joomla</li>
                   <li class="tag">&#x2022;</li>
                   <li class="tag">HTML</li>
@@ -200,60 +197,60 @@
                   <li class="tag">&#x2022;</li>
                   <li class="tag">JavaScript</li>
                 </ul>
-                <div class="project-links">
+                <div class="work-links">
                   <a href="https://techxpress.co.ke" target="_blank" rel="noopener" class="link-btn">View
                     Site</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="project scroll-in">
-            <div class="project-image">
+          <div class="work scroll-in">
+            <div class="work-image">
               <img src="images/annual-concert.png" alt="Annual Concert">
             </div>
-            <div class="project-content-container">
-              <div class="project-content">
-                <h3 class="project-title">
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">
                   Annual Concert
                 </h3>
-                <div class="project-description">
+                <div class="work-description">
                   <p>
                     This project is based on a fictional promotion website for an upcoming music concert to promote
                     world peace. The project was an educational exercise at Microverse School of Coding. Information
                     about the concert schedule, performances and ticketing can be found throughout the site.
                   </p>
                 </div>
-                <ul class="project-tags">
+                <ul class="work-tags">
                   <li class="tag">HTML</li>
                   <li class="tag">&#x2022;</li>
                   <li class="tag">CSS</li>
                   <li class="tag">&#x2022;</li>
                   <li class="tag">JavaScript</li>
                 </ul>
-                <div class="project-links">
+                <div class="work-links">
                   <a href="https://github.com/DJ-MrJay/Capstone-1" target="_blank" rel="noopener"
                     class="link-btn">Source Code</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="project scroll-in">
-            <div class="project-image">
+          <div class="work scroll-in">
+            <div class="work-image">
               <img src="images/bookstore-CMS.png" alt="Bookstore CMS">
             </div>
-            <div class="project-content-container">
-              <div class="project-content">
-                <h3 class="project-title">
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">
                   Bookstore CMS
                 </h3>
-                <div class="project-description">
+                <div class="work-description">
                   <p>
                     Bookstore is a web app that allows you to display a list of books, add and remove books to and from
                     the list. It is built using react and redux. The project was an educational solo exercise at
                     Microverse School of Coding.
                   </p>
                 </div>
-                <ul class="project-tags">
+                <ul class="work-tags">
                   <li class="tag">HTML</li>
                   <li class="tag">&#x2022;</li>
                   <li class="tag">CSS</li>
@@ -262,23 +259,23 @@
                   <li class="tag">&#x2022;</li>
                   <li class="tag">Redux</li>
                 </ul>
-                <div class="project-links">
+                <div class="work-links">
                   <a href="https://github.com/DJ-MrJay/Awesome-books" target="_blank" rel="noopener"
                     class="link-btn">Source Code</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="project scroll-in">
-            <div class="project-image">
+          <div class="work scroll-in">
+            <div class="work-image">
               <img src="images/super-wheels.png" alt="Super Wheels">
             </div>
-            <div class="project-content-container">
-              <div class="project-content">
-                <h3 class="project-title">
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">
                   Super Wheels Car Rentals
                 </h3>
-                <div class="project-description">
+                <div class="work-description">
                   <p>
                     The Super Wheels Car Rentals is a React front-end and Ruby on Rails back-end web app that manages
                     appointments for booking test drives for cars. This was a collaborative project at Microverse School
@@ -286,7 +283,7 @@
                     delete cars, make reservations, authenticate users.
                   </p>
                 </div>
-                <ul class="project-tags">
+                <ul class="work-tags">
                   <li class="tag">React</li>
                   <li class="tag">&#x2022;</li>
                   <li class="tag">Redux</li>
@@ -297,7 +294,7 @@
                   <li class="tag">&#x2022;</li>
                   <li class="tag">Bootstrap</li>
                 </ul>
-                <div class="project-links">
+                <div class="work-links">
                   <a href="https://github.com/Itswali/Rental-Cars" target="_blank" rel="noopener"
                     class="link-btn">Source Code</a>
                   <a href="https://supercarsrentals.onrender.com" target="_blank" rel="noopener" class="link-btn">View
@@ -314,11 +311,9 @@
     </section>
 
     <div class="wave-border bottom">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-          style="stroke: none; fill: var(--shade-100);"></path>
-        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
-          style="stroke: var(--neon-color); fill: none;"></path>
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"></path>
       </svg>
     </div>
 
@@ -406,7 +401,7 @@
           </a>
         </div>
         <div class="section-link scroll-in">
-          <a href="https://medium.com/@djmrjay" target="_blank" class="link-btn">View All Articles</a>
+          <a href="https://medium.com/@djmrjay" target="_blank" rel="noopener" class="link-btn">View All Articles</a>
         </div>
       </div>
     </section>
@@ -444,16 +439,16 @@
   <footer class="index-footer">
     <div class="container">
       <div class="social-media">
-        <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank" rel="noopener" title="LinkedIn">
           <i class="bi bi-linkedin"></i>
         </a>
-        <a href="https://github.com/DJ-MrJay" target="_blank" title="Github">
+        <a href="https://github.com/DJ-MrJay" target="_blank" rel="noopener" title="Github">
           <i class="bi bi-github"></i>
         </a>
-        <a href="https://twitter.com/jonah_wambua" target="_blank" title="Twitter">
+        <a href="https://twitter.com/jonah_wambua" target="_blank" rel="noopener" title="Twitter">
           <i class="bi bi-twitter-x"></i>
         </a>
-        <a href="https://medium.com/@djmrjay" target="_blank" title="Medium">
+        <a href="https://medium.com/@djmrjay" target="_blank" rel="noopener" title="Medium">
           <i class="bi bi-medium"></i>
         </a>
       </div>
