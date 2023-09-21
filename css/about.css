@@ -1,0 +1,122 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#about.container {
+  max-width: 960px;
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.intro-image {
+  flex: 1 1 30%;
+}
+
+.intro-image img {
+  width: 100%;
+}
+
+.intro {
+  flex: 1 1 70%;
+}
+
+.intro p {
+  max-width: 40ch;
+}
+
+.intro .large-text {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--shade-500);
+}
+
+.intro .bold-text {
+  font-size: 1.5rem;
+  color: var(--grey-text);
+}
+
+.main-text p {
+  font-size: 1.25rem;
+}
+
+summary .subsection-title {
+  display: inline;
+  cursor: pointer;
+}
+
+.main-text {
+  margin: 1rem 1rem 3rem;
+}
+
+.text {
+  padding: 2rem 0;
+  border-bottom: 1px dashed var(--shade-300);
+}
+
+.list .text {
+  padding-bottom: 1rem;
+}
+
+.text:first-of-type {
+  padding-top: 0;
+}
+
+.text-header {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.text .text-header a {
+  color: var(--shade-300);
+  text-decoration: none;
+}
+
+.text p.text-subtitle {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.text li {
+  Smax-width: 65ch;
+  font-size: 1.15rem;
+  color: var(--grey-text);
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.tags img {
+  height: 45px;
+  background-color: lightgray;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.section-link {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .intro-container {
+    flex-direction: column-reverse;
+  }
+
+  .intro {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}

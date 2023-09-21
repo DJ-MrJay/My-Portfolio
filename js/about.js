@@ -8,3 +8,6 @@ const openDetails = () => {
 
 openDetails();
 window.addEventListener("hashchange", openDetails);
+
+// Set the current year
+document.getElementById("currentYear").textContent = new Date().getFullYear();

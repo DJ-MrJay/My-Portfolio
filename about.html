@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="How I got started as a developer, my experience, skills and tech stacks.">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/accordion.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+
+  <!-- Bootstrap icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>Jonah Wambua | About Me</title>
+</head>
+
+<body>
+  <nav class="visible">
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        <img class="light-logo" src="images/jonahwambua-light.svg" alt="Logo" height="20">
+        <img class="dark-logo" src="images/jonahwambua.svg" alt="Logo" height="20">
+      </a>
+      <div class="nav-links">
+        <a href="index.html#about" class="link">about</a>
+        <a href="index.html#works" class="link">works</a>
+        <a href="index.html#articles" class="link">articles</a>
+        <a href="index.html#contacts" class="link">contacts</a>
+        <div class="social-media">
+          <a href="https://github.com/DJ-MrJay" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>
+          <a href="https://twitter.com/jonah_wambua" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a href="https://medium.com/@djmrjay" title="Medium">
+            <i class="demo-icon icon-medium"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jonah-wambua/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" type="button" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" type="button" title="Select a color scheme" class="control">
+          <i class="demo-icon icon-cog"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" type="button" onclick="setTheme('light')"
+          aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" type="button" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about" class="container">
+      <div class="intro-container">
+        <div class="intro">
+          <p>My journey into the world of coding commenced around 2008, during my second year at university.
+            Back then, my maiden project was a Patient Management System for a hospital using Microsoft Visual Basics
+            (front-end) and Microsoft Access (back-end), and from that moment onward, I was captivated.
+          </p>
+          <p>
+            I was truly fascinated by not only the intricate logic behind crafting applications but also by the art of
+            making
+            them visually appealing to users given my keen eye for detail. Those two laid the foundation for my foray
+            into the
+            realm of full-stack development, igniting my career.
+          </p>
+          <p>
+            My quest for knowledge is unceasing, as I continually explore new technologies and concepts to stay abreast
+            of the
+            ever-evolving trends of our digital age. Sharing my insights through written articles is my way of giving
+            back to
+            the community. I find joy in crafting imaginative designs on Codepen and indulging in the world of graphic
+            design,
+            cherishing the beauty of aesthetics.
+          </p>
+          <p>Currently, my focus lies on advancing to the next stage of my career, striving to attain the status of a
+            mid-level developer.
+          </p>
+          <p>Thank you.</p>
+        </div>
+        <div class="intro-image">
+          <img src="images/about/portrait.png" alt="Jonah Wambua">
+        </div>
+      </div>
+    </section>
+
+    <section id="experience-skills">
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Experience
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div class="main-text">
+              <div class="text">
+                <h3 class="text-header">Freelance Designer & Developer</h3>
+                <p class="text-subtitle">FEB 2022 - PRESENT | Nairobi, Kenya</p>
+                <ul>
+                  <li>Creating visually appealing and responsive websites using HTML, CSS, and JavaScript for various contractual clients.</li>
+                  <li>Proficient in design tools such as Adobe XD and Figma, and I've applied these skills to design interfaces that enhance user experiences.</li>
+                  <li>Strong background in graphic design, which extends to creating logos, icons, infographics, and other visual assets.</li>
+                </ul>
+              </div>
+
+              <div class="text">
+                <h3 class="text-header">Mentor (Volunteer) — <a href="https://www.microverse.org/"
+                    target="_blank" rel="noopener">Microverse</a> </h3>
+                <p class="text-subtitle">AUGUST 2022 - PRESENT | Remote</p>
+                <ul>
+                  <li>Mentoring junior web developers, providing technical support through code reviews.</li>
+                  <li>Proposing improvements to code organization to improve code quality and overall performance.</li>
+                  <li>Providing advice and tips on how to maintain motivation to maintain longevity in the program.</li>
+                </ul>
+              </div>
+
+              <div class="text">
+                <h3 class="text-header">Pre Sales Technical Consultant — <a href="https://i3technologies.co.ke"
+                    target="_blank" rel="noopener">i3 Technologies</a> </h3>
+                <p class="text-subtitle">OCTOBER 2020 - FEBRUARY 2022 | Athi River, Kenya</p>
+                <ul>
+                  <li>Leveraged the IBM PartnerWorld program to curate strategies to reach audiences with their My Digital Marketing tool.</li>
+                  <li>Sourced for high-value customers including county and national governments, and maintained a close relationship with the customers, including visiting them on-site.</li>
+                  <li>Developed and delivered comprehensive technical presentations and demonstrations to prospective clients, resulting in a 40% increase in successful sales.</li>
+                </ul>
+              </div>
+
+              <div class="text">
+                <h3 class="text-header">IT Manager — DBass Auto</h3>
+                <p class="text-subtitle">JULY 2016 - JULY 2020 | Nairobi, Kenya</p>
+                <ul>
+                  <li>Redesigned the company logo: I created a new logo that better reflects the brand's identity and values. The new logo was well-received by customers and employees alike and helped to modernize the company's image.</li>
+                  <li>Developed and implemented a network security plan, including firewalls, anti-virus software, and employee training, reducing the risk of cyber-attacks and protecting sensitive customer information.</li>
+                  <li>Created and execute a digital marketing plan that included social media advertising, email marketing, and other digital assets effectively increasing brand awareness and more traffic to the company's website.</li>
+                </ul>
+              </div>
+
+              <div class="text">
+                <h3 class="text-header">System Administrator — Sameday Cargo Forwarders</h3>
+                <p class="text-subtitle">FEBRUARY 2004 - AUGUST 2015 | Nairobi, Kenya</p>
+                <ul>
+                  <li>Implemented and maintained a robust IT infrastructure that enabled the company to achieve 99.9% uptime for critical business applications and services.</li>
+                  <li>Led the migration of legacy systems to digital solutions, resulting in improved scalability, reliability, and cost-efficiency.</li>
+                  <li>Contributed to the development and implementation of the company's IT policies and procedures, ensuring compliance with industry standards and regulations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Skills
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div class="main-text list">
+              <div class="text">
+                <h3 class="text-header">Languages</h3>
+                <div class="tags">
+                  <img src="./images/about/HTML5_logo.svg" alt="HTML5" title="HTML5">
+                  <img src="./images/about/CSS3_logo.svg" alt="CSS3" title="CSS3">
+                  <img src="./images/about/JavaScript_logo.svg" alt="JavaScript" title="JavaScript">
+                  <img src="./images/about/Ruby_logo.svg" alt="Ruby" title="Ruby">
+                  <img src="./images/about/PHP-logo.svg" alt="PHP" title="PHP">
+                  <img src="./images/about/Typescript_logo.svg" alt="TypeScript" title="TypeScript">
+                  <img src="./images/about/C++_Logo.svg" alt="C++" title="C++">
+                </div>
+              </div>
+              <div class="text">
+                <h3 class="text-header">Libraries</h3>
+                <div class="tags">
+                  <img src="./images/about/React-icon.svg" alt="React" title="React">
+                  <img src="./images/about/Redux_Logo.png" alt="Redux" title="Redux">
+                </div>
+              </div>
+              <div class="text">
+                <h3 class="text-header">Frameworks</h3>
+                <div class="tags">
+                  <img src="./images/about/Ruby_On_Rails_Logo.svg" alt="Ruby on Rails" title="Ruby on Rails">
+                  <img src="./images/about/Nextjs-logo.svg" alt="Next.js" title="Next.js">
+                  <img src="./images/about/Webpack.svg" alt="Webpack" title="Webpack">
+                </div>
+              </div>
+              <div class="text">
+                <h3 class="text-header">Tools & Systems</h3>
+                <div class="tags">
+                  <img src="./images/about/VS_Code_icon.svg" alt="VS Code" title="Visual Studio Code">
+                  <img src="./images/about/Git-logo.svg" alt="Git" title="Git Version Control">
+                  <img src="./images/about/Npm-logo.svg" alt="NPM" title="Node Package Manager">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-link">
+      <a href="https://docs.google.com/document/d/1_IGWd4LabaNtwFG3Jqg2o0BTAnGL0iwxKnI9eLnHkU8/edit?usp=sharing"
+        class="link-btn" target="_blank" rel="noopener">My Résumé</a>
+    </div>
+
+    <div class="page-nav container">
+      <a href="/"><i class="bi bi-chevron-left"></i> Home</a>
+      <a href="index.html#works">Works <i class="bi bi-chevron-right"></i></a>
+    </div>
+  </main>
+
+  <footer class="index-footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/DJ-MrJay" target="_blank" rel="noopener" title="Github">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://twitter.com/jonah_wambua" target="_blank" rel="noopener" title="Twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://medium.com/@djmrjay" target="_blank" rel="noopener" title="Medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; <span id="currentYear"></span>. Designed with <span class="heart">&hearts;</span> by Jonah Wambua
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./js/about.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/landing-page.js"></script>
+<script src="./js/accordion.js"></script>
+
+</html>

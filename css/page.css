@@ -35,7 +35,7 @@ section p {
 }
 
 .page-nav {
-  padding: 3rem 0 0rem;
+  padding: 3rem 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
