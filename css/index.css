@@ -360,7 +360,7 @@ form input {
   padding: 1rem;
   border-radius: 0.5rem;
   opacity: 60%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 form textarea {
@@ -368,11 +368,10 @@ form textarea {
   padding: 1rem;
   border-radius: 0.5rem;
   opacity: 60%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 form input[type="submit"] {
-
   max-width: 200px;
 }
 

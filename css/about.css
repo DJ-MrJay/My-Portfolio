@@ -84,7 +84,7 @@ summary .subsection-title {
 }
 
 .text li {
-  Smax-width: 65ch;
+  smax-width: 65ch;
   font-size: 1.15rem;
   color: var(--grey-text);
   margin: 0;
@@ -95,7 +95,6 @@ summary .subsection-title {
   flex-wrap: wrap;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
 }
 
 .tags img {

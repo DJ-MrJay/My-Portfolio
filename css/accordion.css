@@ -1,14 +1,13 @@
 .accordion {
   display: flex;
   flex-direction: column;
-	max-width: 960px;
-	margin: auto;
+  max-width: 960px;
+  margin: auto;
 }
 
 .accordion-item {
   border: 1px solid #ffffff10;
   margin-bottom: 1rem;
-
 }
 
 .accordion-header {
