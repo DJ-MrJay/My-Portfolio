@@ -84,7 +84,6 @@ summary .subsection-title {
 }
 
 .text li {
-  smax-width: 65ch;
   font-size: 1.15rem;
   color: var(--grey-text);
   margin: 0;
