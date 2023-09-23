@@ -7,18 +7,22 @@
 }
 
 .accordion-item {
-  border: 1px solid #ffffff10;
+  border: 1px solid var(--shade-100);
+  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
 .accordion-header {
-  background-color: #f0f0f010;
   padding: 10px;
   cursor: pointer;
   user-select: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.accordion-header:hover {
+  background-color: var(--shade-100);
 }
 
 .accordion-content {
