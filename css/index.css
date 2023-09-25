@@ -453,6 +453,10 @@ footer.index-footer {
     background-size: 75vw;
   }
 
+  nav img {
+    height: 16px;
+  }
+
   .work,
   .work:nth-of-type(even) {
     flex-direction: column;

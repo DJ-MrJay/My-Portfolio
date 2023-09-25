@@ -119,6 +119,10 @@ summary .subsection-title {
 }
 
 @media screen and (max-width: 720px) {
+  nav img {
+    height: 16px;
+  }
+  
   .intro-container {
     flex-direction: column-reverse;
   }
@@ -126,5 +130,10 @@ summary .subsection-title {
   .intro {
     margin-left: 0;
     margin-bottom: 1rem;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
   }
 }
