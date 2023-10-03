@@ -213,12 +213,13 @@ section:last-of-type .container {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  gap: 0.3rem;
+  color: var(--shade-500);
   margin: 0;
   padding: 0;
 }
 
 .work-tags .tag {
-  margin-right: 0.3rem;
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;

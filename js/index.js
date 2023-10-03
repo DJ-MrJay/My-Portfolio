@@ -126,8 +126,24 @@ window.addEventListener("scroll", () => {
   handleNavScroll();
 });
 
-// Form Validation
+// Get all elements with the class "work-tags"
+const tagLists = document.getElementsByClassName("work-tags");
 
+// Loop through each tag list
+for (let j = 0; j < tagLists.length; j++) {
+  const tags = tagLists[j].getElementsByClassName("tag");
+  const numTags = tags.length;
+
+  // Loop through the tags in reverse order and insert dots
+  for (let i = numTags - 1; i > 0; i--) {
+    const dot = document.createElement("li");
+    dot.className = "tag";
+    dot.innerHTML = "&#x2022;";
+    tagLists[j].insertBefore(dot, tags[i]);
+  }
+}
+
+// Form Validation
 function errorMessage(elemId, requiredMessage) {
   document.getElementById(elemId).innerHTML = requiredMessage;
 }
