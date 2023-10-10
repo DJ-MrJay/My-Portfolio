@@ -94,6 +94,10 @@ header .header-text {
   animation: bounce-top 1.5s ease-in-out infinite both;
 }
 
+nav {
+  border-bottom: 1px solid var(--shade-100);
+}
+
 section:nth-of-type(even) {
   background-color: var(--shade-100);
 }
@@ -384,7 +388,7 @@ form input[type="submit"] {
 
 footer {
   padding-top: 2rem;
-  border-top: 1px solid var(--shade-500);
+  border-top: 1px solid var(--shade-100);
 }
 
 footer.index-footer {

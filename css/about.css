@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+nav {
+  border-bottom: 1px solid var(--shade-100);
+}
+
 #about.container {
   max-width: 960px;
 }
@@ -116,6 +120,11 @@ summary .subsection-title {
 
 .section-link {
   margin-bottom: 4rem;
+}
+
+footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--shade-100);
 }
 
 @media screen and (max-width: 720px) {
