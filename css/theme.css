@@ -20,10 +20,6 @@
   background-color: #ffffff23;
 }
 
-:root.light .light-logo {
-  display: none;
-}
-
 :root.dark {
   --background-color: #0d1926;
   --text-color: #f7fafc;
@@ -45,8 +41,8 @@
   background-color: #0d19265b;
 }
 
-:root.dark .dark-logo {
-  display: none;
+:root.dark .nav-logo {
+  filter: invert(100%);
 }
 
 #light-select .color.text {

@@ -206,20 +206,6 @@ nav .container {
   animation: rotate-center 2s ease-in-out both infinite;
 }
 
-.nav-logo {
-  position: relative;
-  line-height: 1;
-  font-size: 1.1rem;
-}
-
-.logo {
-  text-align: center;
-  font-size: 1.25rem;
-  color: var(--shade-500);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 .theme-container {
   position: absolute;
   padding: 2rem;
@@ -393,10 +379,6 @@ footer .copyright {
 }
 
 @media screen and (max-width: 720px) {
-  .logo {
-    font-size: 1rem;
-  }
-
   .js-nav .nav-links {
     position: absolute;
     padding: 2rem;
