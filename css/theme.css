@@ -39,10 +39,15 @@
   width: 100%;
   height: 100%;
   background-color: #0d19265b;
+  filter: grayscale(100%);
 }
 
 :root.dark .nav-logo {
   filter: invert(100%);
+}
+
+:root.dark .intro-image {
+  filter: grayscale(100%);
 }
 
 #light-select .color.text {

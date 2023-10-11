@@ -1,18 +1,29 @@
 header {
   position: relative;
   height: 100vh;
-  background-image: url("../images/jay-no-back-mono.png");
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/mugshot.png");
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: right bottom;
+  
 }
+
 
 header.js-fixed {
   height: 110vh;
 }
 
 .header-container {
-  width: 45%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -399,8 +410,9 @@ footer.index-footer {
   header .fixed-header:before {
     height: 51%;
   }
-  header h1 {
+  header h1 p {
     font-size: 3rem;
+    line-height: 120%;
   }
   header h2 {
     font-size: 1.5rem;
@@ -446,8 +458,9 @@ footer.index-footer {
 }
 
 @media screen and (max-width: 720px) {
-  header h1 {
+  header h1 p {
     font-size: 2.5rem;
+    line-height: 110%;
   }
 
   header h2 {
