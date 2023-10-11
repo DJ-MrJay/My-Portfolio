@@ -1,6 +1,6 @@
-/* header .animate-background:before {
+header .animate-background:before {
   animation: slide-in-bottom 1s ease-in-out both;
-} */
+}
 
 header .animate-logo {
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
