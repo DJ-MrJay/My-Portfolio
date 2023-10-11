@@ -216,7 +216,7 @@ section:last-of-type .container {
   margin-bottom: 1rem;
   color: var(--shade-500);
   font-size: 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .work-title a {
