@@ -14,9 +14,7 @@ header::before {
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: right bottom;
-  
 }
-
 
 header.js-fixed {
   height: 110vh;
@@ -467,8 +465,8 @@ footer.index-footer {
     font-size: 1.25rem;
   }
 
-  header {
-    background-size: 75vw;
+  header::before {
+    background-size: 65vw;
   }
 
   nav img {
