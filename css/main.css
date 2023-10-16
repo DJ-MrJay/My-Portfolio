@@ -128,7 +128,7 @@ nav .container {
   content: "";
   z-index: -1;
   position: absolute;
-  background-color: var(--secondary-color);
+  background-color: var(--shade-500);
   bottom: 0;
   left: 0;
   width: 100%;

@@ -1,0 +1,13 @@
+.circle {
+  width: 40px;
+  height: 40px;
+  background: var(--shade-300);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
