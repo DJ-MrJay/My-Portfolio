@@ -148,8 +148,12 @@ function errorMessage(elemId, requiredMessage) {
   document.getElementById(elemId).innerHTML = requiredMessage;
 }
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable consistent-return */
+function capitalizeEachWord(element) {
+  // Capitalize the first letter of each word in the input value
+  element.value = element.value.replace(/\b\w/g, function (char) {
+      return char.toUpperCase();
+  });
+}
 
 function validationForm() {
   const fullname = document.form.fullname.value;

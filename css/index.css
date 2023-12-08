@@ -139,7 +139,6 @@ section:last-of-type .container {
 .section-subtitle {
   font-size: 1.5rem;
   color: var(--grey-text);
-  max-width: 60ch;
 }
 
 .title-icon {
@@ -360,7 +359,7 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .name-email-inputs {
@@ -369,24 +368,44 @@ form {
   gap: 1rem;
 }
 
+::placeholder {
+  font-size: 1rem;
+}
+
 form input {
+  border: 2px solid var(--grey-color);
+  background-color: transparent;
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
-  opacity: 60%;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--grey-text);
+  transition: border 500ms, background-color 500ms, color 500ms;
+  outline: none;
 }
 
 form textarea {
+  border: 2px solid var(--grey-color);
+  background-color: transparent;
   height: 250px;
   padding: 1rem;
   border-radius: 0.5rem;
-  opacity: 60%;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--grey-text);
+  transition: border 500ms, background-color 500ms, color 500ms;
+  outline: none;
 }
 
 form input[type="submit"] {
-  max-width: 200px;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+form .link-btn {
+  border-radius: 0.5rem;
+  color: var(--grey-text);
 }
 
 .error {
@@ -499,6 +518,10 @@ footer.index-footer {
 
   .form-container {
     padding: 3rem 0;
+  }
+
+  form {
+    gap: 1rem;
   }
 
   .name-email-inputs {

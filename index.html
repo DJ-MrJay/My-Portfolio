@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/kinet.css">
+    <link rel="stylesheet" href="css/kinet.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -62,13 +62,15 @@
           </div>
           <div class="header-text">
             <h1>
-              <p class="animate-text-1"><small>Graphic & UI/UX Designer.</small></p>
+              <p class="animate-text-1">
+                <small>Graphic & UI/UX Designer.</small>
+              </p>
               <p class="animate-text-2">Full-Stack Software Developer.</p>
             </h1>
           </div>
           <h2 class="animate-subtitle">
-            I craft digital designs & web applications, prioritizing user experience,
-            functionality, responsiveness, and accessibility.
+            I craft digital designs & web applications, prioritizing user
+            experience, functionality, responsiveness, and accessibility.
           </h2>
           <div class="scroll-button animate-scroll" tabindex="0">
             Dive In&nbsp;
@@ -699,8 +701,9 @@
             <h2 class="section-title">Contacts</h2>
             <p class="section-subtitle">
               If you have an application you are interested in developing, a
-              feature that you need built, or a project that needs coding, I’d
-              love to help with it.
+              brand that you need designed, or a project that needs coding, I’d
+              love to help with it. Leave a message below and I will promptly
+              get in touch.
             </p>
           </div>
 
@@ -718,6 +721,7 @@
                   name="fullname"
                   placeholder="Your name?"
                   maxlength="30"
+                  oninput="capitalizeEachWord(this)"
                 />
                 <input
                   type="email"
@@ -732,7 +736,7 @@
                 placeholder="Write your message here"
                 maxlength="500"
               ></textarea>
-              <input type="submit" value="Get In Touch" />
+              <input class="link-btn" type="submit" value="Send Message" />
             </form>
 
             <div class="error">
@@ -782,8 +786,8 @@
           </a>
         </div>
         <div class="copyright">
-          &copy; <span id="currentYear"></span>. Designed with
-          <span class="heart">&hearts;</span> by Jonah Wambua
+          &copy; <span id="currentYear"></span>. Developed with
+          <span class="heart">&hearts;</span> by yours truly!
         </div>
       </div>
     </footer>
