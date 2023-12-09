@@ -79,6 +79,25 @@ header .header-text {
   position: relative;
 }
 
+.highlight {
+  position: relative;
+}
+
+.highlight:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: rgb(128, 77, 128);
+  transform: rotate(-2deg);
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+}
+
 .scroll-button {
   position: absolute;
   bottom: 0;

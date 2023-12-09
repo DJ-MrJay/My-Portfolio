@@ -1,801 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1a324c" />
-    <meta name="msapplication-navbutton-color" content="#1a324c" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta
-      name="description"
-      content="Jonah Wambua is a Creative Designer and Full-Stack Developer from Nairobi, Kenya."
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/kinet.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
 
-    <!-- Bootstrap icons CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c" />
+  <meta name="msapplication-navbutton-color" content="#1a324c" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description"
+    content="Jonah Wambua is a Creative Designer and Full-Stack Developer from Nairobi, Kenya." />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/kinet.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-    <script src="./dist/kinet.min.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <title>Jonah Wambua | Portfolio</title>
-  </head>
+  <script src="./dist/kinet.min.js"></script>
 
-  <body>
-    <header>
-      <div class="fixed-header animate-background">
-        <div class="container header-container">
-          <div class="logo-container">
-            <span class="logo animate-logo">Jonah Wambua</span>
-          </div>
-          <div class="header-text">
-            <h1>
-              <p class="animate-text-1">
-                <small>Graphic & UI/UX Designer.</small>
-              </p>
-              <p class="animate-text-2">Full-Stack Software Developer.</p>
-            </h1>
-          </div>
-          <h2 class="animate-subtitle">
-            I craft digital designs & web applications, prioritizing user
-            experience, functionality, responsiveness, and accessibility.
-          </h2>
-          <div class="scroll-button animate-scroll" tabindex="0">
-            Dive In&nbsp;
-            <div class="arrow"><i class="bi bi-arrow-down"></i></div>
-          </div>
+  <title>Jonah Wambua | Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo">Jonah Wambua</span>
         </div>
-      </div>
-    </header>
-
-    <nav>
-      <div class="container">
-        <a href="index.html" class="nav-logo" title="Back to Homepage">
-          <img src="images/jonahwambua.svg" alt="Logo" height="20" />
-        </a>
-        <div class="nav-links">
-          <a href="#about" class="link">about</a>
-          <a href="#works" class="link">works</a>
-          <a href="#articles" class="link">articles</a>
-          <a href="#contacts" class="link">contact me</a>
-          <div class="social-media">
-            <a
-              href="https://www.linkedin.com/in/jonah-wambua/"
-              target="_blank"
-              rel="noopener"
-              title="LinkedIn"
-            >
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/DJ-MrJay"
-              target="_blank"
-              rel="noopener"
-              title="Github"
-            >
-              <i class="bi bi-github"></i>
-            </a>
-            <a
-              href="https://twitter.com/jonah_wambua"
-              target="_blank"
-              rel="noopener"
-              title="Twitter"
-            >
-              <i class="bi bi-twitter-x"></i>
-            </a>
-            <a
-              href="https://medium.com/@djmrjay"
-              target="_blank"
-              rel="noopener"
-              title="Medium"
-            >
-              <i class="bi bi-medium"></i>
-            </a>
-          </div>
-        </div>
-        <div class="nav-controls">
-          <button
-            id="menu-display"
-            type="button"
-            title="Show Menu"
-            class="hamburger"
-          ></button>
-          <button
-            id="theme-display"
-            type="button"
-            title="Select a color scheme"
-            class="control"
-          >
-            <i class="demo-icon icon-cog"></i>
-          </button>
-        </div>
-        <div class="theme-container">
-          <button
-            class="light theme-select"
-            id="light-select"
-            type="button"
-            onclick="setTheme('light')"
-            aria-label="Set light theme"
-          >
-            <div class="theme-label">Light</div>
-            <div class="theme">
-              <div class="color background"></div>
-              <div class="color shade-100"></div>
-              <div class="color shade-300"></div>
-              <div class="color shade-500"></div>
-              <div class="color text"></div>
-            </div>
-          </button>
-          <button
-            class="dark theme-select"
-            id="dark-select"
-            type="button"
-            onclick="setTheme('dark')"
-            onkeydown="(e) => setThemeKey(e, 'dark')"
-            aria-label="Set dark theme"
-          >
-            <div class="theme-label">Dark</div>
-            <div class="theme">
-              <div class="color background"></div>
-              <div class="color shade-100"></div>
-              <div class="color shade-300"></div>
-              <div class="color shade-500"></div>
-              <div class="color text"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <main>
-      <section id="about">
-        <div class="container inner-container">
-          <div class="intro scroll-in">
-            <h2 class="section-title">Hello.</h2>
-            <div class="section-subtitle">
-              <p>
-                I’m a Kenyan creative designer and a full-stack software
-                developer, crafting websites and web apps since 2015.
-              </p>
-              <p>
-                My work emphasizes responsive design, accessibility, and
-                captivating aesthetics.
-              </p>
-              <p>
-                Additionally, I offer freelance graphic design and UI/UX
-                expertise. Music fuels my passion and creativity.
-              </p>
-              <p>Let’s create something amazing together!</p>
-            </div>
-            <div class="section-link">
-              <a href="about.html" class="link-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="wave-border top">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-          <path
-            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          ></path>
-          <path
-            class="neon-path"
-            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
-          ></path>
-        </svg>
-      </div>
-
-      <section id="works">
-        <div class="container">
-          <div class="title-container scroll-in">
-            <h2 class="section-title">Works</h2>
-            <p class="section-subtitle">
-              I primarily engage in contractual work, although I occasionally
-              freelance or undertake projects for enjoyment. Below are a few of
-              my recent endeavors:
+        <div class="header-text">
+          <h1>
+            <p class="animate-text-2">Full-Stack Software <span class="highlight">Developer</span>.
             </p>
+            <p class="animate-text-1">
+              <small>Graphic & UI/UX <span class="highlight">Designer</span>.</small>
+            </p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle">
+          I craft digital designs & web applications, prioritizing user
+          experience, functionality, responsiveness, and accessibility.
+        </h2>
+        <div class="scroll-button animate-scroll" tabindex="0">
+          Dive In&nbsp;
+          <div class="arrow"><i class="bi bi-arrow-down"></i></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo" title="Back to Homepage">
+        <img src="images/jonahwambua.svg" alt="Logo" height="20" />
+      </a>
+      <div class="nav-links">
+        <a href="#about" class="link">about</a>
+        <a href="#works" class="link">works</a>
+        <a href="#articles" class="link">articles</a>
+        <a href="#contacts" class="link">contact me</a>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/DJ-MrJay" target="_blank" rel="noopener" title="Github">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://twitter.com/jonah_wambua" target="_blank" rel="noopener" title="Twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://medium.com/@djmrjay" target="_blank" rel="noopener" title="Medium">
+            <i class="bi bi-medium"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" type="button" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" type="button" title="Select a color scheme" class="control">
+          <i class="demo-icon icon-cog"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" type="button" onclick="setTheme('light')"
+          aria-label="Set light theme">
+          <div class="theme-label">Light</div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
           </div>
-          <div class="work-container">
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/super-wheels.png" alt="Super Wheels" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Super Wheels Car Rentals</h3>
-                  <div class="work-description">
-                    <p>
-                      Super Wheels Car Rentals is a web application with a React
-                      front-end and Ruby on Rails back-end, designed for
-                      scheduling test drives for cars. This collaborative
-                      project at
-                      <a
-                        href="https://www.microverse.org/"
-                        target="_blank"
-                        rel="noopener"
-                        >Microverse</a
-                      >
-                      includes a Rails API offering endpoints for users to
-                      create, retrieve, update, and delete cars, make
-                      reservations, and authenticate users.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">React</li>
-                    <li class="tag">Redux</li>
-                    <li class="tag">Ruby on Rails</li>
-                    <li class="tag">CSS</li>
-                  </ul>
-                  <div class="work-links">
-                    <a
-                      href="https://github.com/Itswali/Rental-Cars"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >Code <i class="bi bi-box-arrow-up-right"></i
-                    ></a>
-                    <a
-                      href="https://supercarsrentals.onrender.com"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" type="button" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">Dark</div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Hello.</h2>
+          <div class="section-subtitle">
+            <p>
+              I’m a Kenyan creative designer and a full-stack software
+              developer, crafting websites and web apps since 2015.
+            </p>
+            <p>
+              My work emphasizes responsive design, accessibility, and
+              captivating aesthetics.
+            </p>
+            <p>
+              Additionally, I offer freelance graphic design and UI/UX
+              expertise. Music fuels my passion and creativity.
+            </p>
+            <p>Let’s create something amazing together!</p>
+          </div>
+          <div class="section-link">
+            <a href="about.html" class="link-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"></path>
+      </svg>
+    </div>
+
+    <section id="works">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Works</h2>
+          <p class="section-subtitle">
+            I primarily engage in contractual work, although I occasionally
+            freelance or undertake projects for enjoyment. Below are a few of
+            my recent endeavors:
+          </p>
+        </div>
+        <div class="work-container">
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/super-wheels.png" alt="Super Wheels" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Super Wheels Car Rentals</h3>
+                <div class="work-description">
+                  <p>
+                    Super Wheels Car Rentals is a web application with a React
+                    front-end and Ruby on Rails back-end, designed for
+                    scheduling test drives for cars. This collaborative
+                    project at
+                    <a href="https://www.microverse.org/" target="_blank" rel="noopener">Microverse</a>
+                    includes a Rails API offering endpoints for users to
+                    create, retrieve, update, and delete cars, make
+                    reservations, and authenticate users.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">React</li>
+                  <li class="tag">Redux</li>
+                  <li class="tag">Ruby on Rails</li>
+                  <li class="tag">CSS</li>
+                </ul>
+                <div class="work-links">
+                  <a href="https://github.com/Itswali/Rental-Cars" target="_blank" rel="noopener" class="link-btn">Code
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="https://supercarsrentals.onrender.com" target="_blank" rel="noopener" class="link-btn">View
+                    Live</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/money-matters.png" alt="Money Matters" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Money Matters</h3>
-                  <div class="work-description">
-                    <p>
-                      This is a Ruby on Rails budgeting mobile app for managing
-                      transactions. It enables users to add and track expenses,
-                      categorize transactions, and view spending insights. I
-                      built it during my Remote Full Stack Web Development
-                      Program at
-                      <a
-                        href="https://www.microverse.org/"
-                        target="_blank"
-                        rel="noopener"
-                        >Microverse</a
-                      >.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">Ruby</li>
-                    <li class="tag">HTML</li>
-                    <li class="tag">CSS</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                  <div class="work-links">
-                    <a
-                      href="https://github.com/DJ-MrJay/Money-Matters"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >Code <i class="bi bi-box-arrow-up-right"></i
-                    ></a>
-                    <a
-                      href="https://money-matters-p0pp.onrender.com/"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/money-matters.png" alt="Money Matters" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Money Matters</h3>
+                <div class="work-description">
+                  <p>
+                    This is a Ruby on Rails budgeting mobile app for managing
+                    transactions. It enables users to add and track expenses,
+                    categorize transactions, and view spending insights. I
+                    built it during my Remote Full Stack Web Development
+                    Program at
+                    <a href="https://www.microverse.org/" target="_blank" rel="noopener">Microverse</a>.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">Ruby</li>
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="work-links">
+                  <a href="https://github.com/DJ-MrJay/Money-Matters" target="_blank" rel="noopener"
+                    class="link-btn">Code <i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="https://money-matters-p0pp.onrender.com/" target="_blank" rel="noopener"
+                    class="link-btn">View Live</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/annual-concert.png" alt="Annual Concert" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Annual Concert</h3>
-                  <div class="work-description">
-                    <p>
-                      This is a fictional promotional website for an upcoming
-                      music concert dedicated to promoting world peace. It was
-                      my first capstone project during my Remote Full Stack Web
-                      Development Program at
-                      <a
-                        href="https://www.microverse.org/"
-                        target="_blank"
-                        rel="noopener"
-                        >Microverse</a
-                      >. It features details about the concert schedule,
-                      performances, and ticketing information.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">HTML</li>
-                    <li class="tag">CSS</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                  <div class="work-links">
-                    <a
-                      href="https://github.com/DJ-MrJay/Capstone-1"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >Code <i class="bi bi-box-arrow-up-right"></i
-                    ></a>
-                    <a
-                      href="https://dj-mrjay.github.io/Capstone-1"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/annual-concert.png" alt="Annual Concert" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Annual Concert</h3>
+                <div class="work-description">
+                  <p>
+                    This is a fictional promotional website for an upcoming
+                    music concert dedicated to promoting world peace. It was
+                    my first capstone project during my Remote Full Stack Web
+                    Development Program at
+                    <a href="https://www.microverse.org/" target="_blank" rel="noopener">Microverse</a>. It features
+                    details about the concert schedule,
+                    performances, and ticketing information.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="work-links">
+                  <a href="https://github.com/DJ-MrJay/Capstone-1" target="_blank" rel="noopener" class="link-btn">Code
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="https://dj-mrjay.github.io/Capstone-1" target="_blank" rel="noopener" class="link-btn">View
+                    Live</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/blog-app.png" alt="Blog App" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Blog App</h3>
-                  <div class="work-description">
-                    <p>
-                      Blog App is a Ruby on Rails application that allows users
-                      to create posts, comment on, and 'like' posts. This
-                      project was a solo educational exercise at
-                      <a
-                        href="https://www.microverse.org/"
-                        target="_blank"
-                        rel="noopener"
-                        >Microverse</a
-                      >
-                      during my Remote Full Stack Web Development Program.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">HTML</li>
-                    <li class="tag">CSS</li>
-                    <li class="tag">Ruby</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                  <div class="work-links">
-                    <a
-                      href="https://github.com/DJ-MrJay/My-Blog-App"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >Code <i class="bi bi-box-arrow-up-right"></i
-                    ></a>
-                    <a href="" target="_blank" rel="noopener" class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/blog-app.png" alt="Blog App" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Blog App</h3>
+                <div class="work-description">
+                  <p>
+                    Blog App is a Ruby on Rails application that allows users
+                    to create posts, comment on, and 'like' posts. This
+                    project was a solo educational exercise at
+                    <a href="https://www.microverse.org/" target="_blank" rel="noopener">Microverse</a>
+                    during my Remote Full Stack Web Development Program.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">Ruby</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="work-links">
+                  <a href="https://github.com/DJ-MrJay/My-Blog-App" target="_blank" rel="noopener" class="link-btn">Code
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="" target="_blank" rel="noopener" class="link-btn">View Live</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/bookstore-CMS.png" alt="Bookstore CMS" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Bookstore CMS</h3>
-                  <div class="work-description">
-                    <p>
-                      Bookstore is a web app that enables you to showcase a book
-                      list and manage book additions and removals. Developed
-                      with React and Redux, this project was a solo educational
-                      exercise at
-                      <a
-                        href="https://www.microverse.org/"
-                        target="_blank"
-                        rel="noopener"
-                        >Microverse</a
-                      >
-                      during my Remote Full Stack Web Development Program.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">HTML</li>
-                    <li class="tag">CSS</li>
-                    <li class="tag">React</li>
-                    <li class="tag">Redux</li>
-                  </ul>
-                  <div class="work-links">
-                    <a
-                      href="https://github.com/DJ-MrJay/Awesome-books"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >Code <i class="bi bi-box-arrow-up-right"></i
-                    ></a>
-                    <a
-                      href="https://dj-mrjay.github.io/bookstore/"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/bookstore-CMS.png" alt="Bookstore CMS" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Bookstore CMS</h3>
+                <div class="work-description">
+                  <p>
+                    Bookstore is a web app that enables you to showcase a book
+                    list and manage book additions and removals. Developed
+                    with React and Redux, this project was a solo educational
+                    exercise at
+                    <a href="https://www.microverse.org/" target="_blank" rel="noopener">Microverse</a>
+                    during my Remote Full Stack Web Development Program.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">React</li>
+                  <li class="tag">Redux</li>
+                </ul>
+                <div class="work-links">
+                  <a href="https://github.com/DJ-MrJay/Awesome-books" target="_blank" rel="noopener"
+                    class="link-btn">Code <i class="bi bi-box-arrow-up-right"></i></a>
+                  <a href="https://dj-mrjay.github.io/bookstore/" target="_blank" rel="noopener" class="link-btn">View
+                    Live</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/brand-champ.jpg" alt="Brandchamp Marketing" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Brandchamp Marketing</h3>
-                  <div class="work-description">
-                    <p>
-                      I was entrusted with the task of creating this WordPress
-                      website for a brand marketing company specializing in
-                      brand identity services. Leveraging my proficiency in
-                      <a
-                        href="https://wordpress.com/"
-                        target="_blank"
-                        rel="noopener"
-                        >WordPress</a
-                      >, I successfully crafted and launched the website in just
-                      three days.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">Wordpress</li>
-                    <li class="tag">PHP</li>
-                    <li class="tag">HTML</li>
-                    <li class="tag">CSS</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                  <div class="work-links">
-                    <!-- <a
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/brand-champ.jpg" alt="Brandchamp Marketing" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Brandchamp Marketing</h3>
+                <div class="work-description">
+                  <p>
+                    I was entrusted with the task of creating this WordPress
+                    website for a brand marketing company specializing in
+                    brand identity services. Leveraging my proficiency in
+                    <a href="https://wordpress.com/" target="_blank" rel="noopener">WordPress</a>, I successfully
+                    crafted and launched the website in just
+                    three days.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">Wordpress</li>
+                  <li class="tag">PHP</li>
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="work-links">
+                  <!-- <a
                       href="https://cpanel.brandchamp.co.ke"
                       target="_blank"
                       rel="noopener"
                       class="link-btn"
                       >Code <i class="bi bi-box-arrow-up-right"></i
                     ></a> -->
-                    <a
-                      href="https://brandchamp.co.ke"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+                  <a href="https://brandchamp.co.ke" target="_blank" rel="noopener" class="link-btn">View Live</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="work scroll-in">
-              <div class="work-image">
-                <img src="images/neolite.jpg" alt="Neo Lite Energies" />
-              </div>
-              <div class="work-content-container">
-                <div class="work-content">
-                  <h3 class="work-title">Neo Lite Energies</h3>
-                  <div class="work-description">
-                    <p>
-                      I was tasked with creating a website for an innovative
-                      energy firm that focuses on petroleum products and
-                      services. My extensive knowledge of
-                      <a
-                        href="https://www.joomla.org/"
-                        target="_blank"
-                        rel="noopener"
-                        >Joomla</a
-                      >, enabled me to skillfully develop and deploy the site
-                      within a mere two days.
-                    </p>
-                  </div>
-                  <ul class="work-tags" id="tag-list">
-                    <li class="tag">Joomla</li>
-                    <li class="tag">PHP</li>
-                    <li class="tag">HTML</li>
-                    <li class="tag">CSS</li>
-                    <li class="tag">JavaScript</li>
-                  </ul>
-                  <div class="work-links">
-                    <!-- <a
+          <div class="work scroll-in">
+            <div class="work-image">
+              <img src="images/neolite.jpg" alt="Neo Lite Energies" />
+            </div>
+            <div class="work-content-container">
+              <div class="work-content">
+                <h3 class="work-title">Neo Lite Energies</h3>
+                <div class="work-description">
+                  <p>
+                    I was tasked with creating a website for an innovative
+                    energy firm that focuses on petroleum products and
+                    services. My extensive knowledge of
+                    <a href="https://www.joomla.org/" target="_blank" rel="noopener">Joomla</a>, enabled me to
+                    skillfully develop and deploy the site
+                    within a mere two days.
+                  </p>
+                </div>
+                <ul class="work-tags" id="tag-list">
+                  <li class="tag">Joomla</li>
+                  <li class="tag">PHP</li>
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="work-links">
+                  <!-- <a
                       href="https://cpanel.neolite.co.ke"
                       target="_blank"
                       rel="noopener"
                       class="link-btn"
                       >Code <i class="bi bi-box-arrow-up-right"></i
                     ></a> -->
-                    <a
-                      href="https://neolite.co.ke"
-                      target="_blank"
-                      rel="noopener"
-                      class="link-btn"
-                      >View Live</a
-                    >
-                  </div>
+                  <a href="https://neolite.co.ke" target="_blank" rel="noopener" class="link-btn">View Live</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section-link scroll-in">
-            <a
-              href="https://github.com/DJ-MrJay?tab=repositories"
-              class="link-btn"
-              target="_blank"
-              rel="noopener"
-              >More Projects</a
-            >
-          </div>
         </div>
-      </section>
-
-      <div class="wave-border bottom">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-          <path
-            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-          ></path>
-          <path
-            class="neon-path"
-            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
-          ></path>
-        </svg>
+        <div class="section-link scroll-in">
+          <a href="https://github.com/DJ-MrJay?tab=repositories" class="link-btn" target="_blank" rel="noopener">More
+            Projects</a>
+        </div>
       </div>
+    </section>
 
-      <section id="articles">
-        <div class="container">
-          <div class="title-container scroll-in">
-            <h2 class="section-title">Featured Articles</h2>
-            <p class="section-subtitle">
-              I've authored several tech articles on Medium, covering topics
-              that piqued my interest. I'd be delighted to share them here:
-            </p>
-          </div>
-          <div class="articles-container">
-            <a
-              href="https://medium.com/@djmrjay/css3-unleashing-the-magic-in-web-and-app-development-cf7848792987"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="article scroll-in">
-                <div class="article-image">
-                  <img src="images/articles/css3-cover.jpg" alt="CSS3 Magic" />
-                </div>
-                <div class="article-content">
-                  <div class="article-site">
-                    MEDIUM <i class="bi bi-medium"></i>
-                  </div>
-                  <h3 class="article-title">CSS3: Unleashing the Magic!</h3>
-                  <div class="article-description">
-                    <p>
-                      In the ever-evolving world of web and app development,
-                      CSS3 stands as a true magician,conjuring up stunning
-                      visuals, enhancing user experiences, and bringing
-                      creativity to life. This article delves into the
-                      enchanting world of CSS3 and explores how it continues to
-                      unleash its magic, shaping the digital landscape like
-                      never before.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              href="https://medium.com/@djmrjay/designing-success-the-power-of-aesthetics-and-captivating-ui-ux-in-web-development-eb6fd3b90ee2"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="article scroll-in">
-                <div class="article-image">
-                  <img src="images/articles/ui-ux.jpg" alt="CSS3 Magic" />
-                </div>
-                <div class="article-content">
-                  <div class="article-site">
-                    MEDIUM <i class="bi bi-medium"></i>
-                  </div>
-                  <h3 class="article-title">The Power of Captivating UI/UX</h3>
-                  <div class="article-description">
-                    <p>
-                      In the digital age, where user experience reigns supreme,
-                      the intersection of aesthetics and captivating UI/UX in
-                      web development is a critical catalyst for success. In
-                      this article, we explore the transformative power of
-                      design in web development, exploring how aesthetics and
-                      user-centric interfaces can drive unparalleled success in
-                      the online landscape.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              href="https://medium.com/@djmrjay/advice-for-a-beginner-in-software-development-9460010e5464"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="article scroll-in">
-                <div class="article-image">
-                  <img
-                    src="images/articles/beginner-dev.jpg"
-                    alt="CSS3 Magic"
-                  />
-                </div>
-                <div class="article-content">
-                  <div class="article-site">
-                    MEDIUM <i class="bi bi-medium"></i>
-                  </div>
-                  <h3 class="article-title">Software Development Beginners</h3>
-                  <div class="article-description">
-                    <p>
-                      Embarking on a journey into the world of software
-                      development can be both exciting and daunting. Whether
-                      you're a coding novice or someone looking to switch
-                      careers, this article is your compass for navigating the
-                      vast landscape of software development. Here, I have
-                      outlined indispensable advice to help you chart your
-                      course and set sail on your coding adventure.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="section-link scroll-in">
-            <a
-              href="https://medium.com/@djmrjay"
-              target="_blank"
-              rel="noopener"
-              class="link-btn"
-              >View All Articles</a
-            >
-          </div>
-        </div>
-      </section>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"></path>
+      </svg>
+    </div>
 
-      <section id="contacts">
-        <div class="container">
-          <div class="title-container scroll-in">
-            <h2 class="section-title">Contacts</h2>
-            <p class="section-subtitle">
-              If you have an application you are interested in developing, a
-              brand that you need designed, or a project that needs coding, I’d
-              love to help with it. Leave a message below and I will promptly
-              get in touch.
-            </p>
-          </div>
-
-          <div class="form-container">
-            <form
-              action="https://formspree.io/f/xrgjwepv"
-              method="post"
-              onsubmit="return validationForm()"
-              name="form"
-            >
-              <div class="name-email-inputs">
-                <input
-                  type="text"
-                  id="fname"
-                  name="fullname"
-                  placeholder="Your name?"
-                  maxlength="30"
-                  oninput="capitalizeEachWord(this)"
-                />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your email address?"
-                />
-              </div>
-              <textarea
-                id="msg"
-                name="message"
-                placeholder="Write your message here"
-                maxlength="500"
-              ></textarea>
-              <input class="link-btn" type="submit" value="Send Message" />
-            </form>
-
-            <div class="error">
-              <div id="nameError"></div>
-              <div id="emailError"></div>
-              <div id="messageError"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="index-footer">
+    <section id="articles">
       <div class="container">
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/in/jonah-wambua/"
-            target="_blank"
-            rel="noopener"
-            title="LinkedIn"
-          >
-            <i class="bi bi-linkedin"></i>
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Articles</h2>
+          <p class="section-subtitle">
+            I've authored several tech articles on Medium, covering topics
+            that piqued my interest. I'd be delighted to share them here:
+          </p>
+        </div>
+        <div class="articles-container">
+          <a href="https://medium.com/@djmrjay/css3-unleashing-the-magic-in-web-and-app-development-cf7848792987"
+            target="_blank" rel="noopener">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <img src="images/articles/css3-cover.jpg" alt="CSS3 Magic" />
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  MEDIUM <i class="bi bi-medium"></i>
+                </div>
+                <h3 class="article-title">CSS3: Unleashing the Magic!</h3>
+                <div class="article-description">
+                  <p>
+                    In the ever-evolving world of web and app development,
+                    CSS3 stands as a true magician,conjuring up stunning
+                    visuals, enhancing user experiences, and bringing
+                    creativity to life. This article delves into the
+                    enchanting world of CSS3 and explores how it continues to
+                    unleash its magic, shaping the digital landscape like
+                    never before.
+                  </p>
+                </div>
+              </div>
+            </div>
           </a>
-          <a
-            href="https://github.com/DJ-MrJay"
-            target="_blank"
-            rel="noopener"
-            title="Github"
-          >
-            <i class="bi bi-github"></i>
+          <a href="https://medium.com/@djmrjay/designing-success-the-power-of-aesthetics-and-captivating-ui-ux-in-web-development-eb6fd3b90ee2"
+            target="_blank" rel="noopener">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <img src="images/articles/ui-ux.jpg" alt="CSS3 Magic" />
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  MEDIUM <i class="bi bi-medium"></i>
+                </div>
+                <h3 class="article-title">The Power of Captivating UI/UX</h3>
+                <div class="article-description">
+                  <p>
+                    In the digital age, where user experience reigns supreme,
+                    the intersection of aesthetics and captivating UI/UX in
+                    web development is a critical catalyst for success. In
+                    this article, we explore the transformative power of
+                    design in web development, exploring how aesthetics and
+                    user-centric interfaces can drive unparalleled success in
+                    the online landscape.
+                  </p>
+                </div>
+              </div>
+            </div>
           </a>
-          <a
-            href="https://twitter.com/jonah_wambua"
-            target="_blank"
-            rel="noopener"
-            title="Twitter"
-          >
-            <i class="bi bi-twitter-x"></i>
-          </a>
-          <a
-            href="https://medium.com/@djmrjay"
-            target="_blank"
-            rel="noopener"
-            title="Medium"
-          >
-            <i class="bi bi-medium"></i>
+          <a href="https://medium.com/@djmrjay/advice-for-a-beginner-in-software-development-9460010e5464"
+            target="_blank" rel="noopener">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <img src="images/articles/beginner-dev.jpg" alt="CSS3 Magic" />
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  MEDIUM <i class="bi bi-medium"></i>
+                </div>
+                <h3 class="article-title">Software Development Beginners</h3>
+                <div class="article-description">
+                  <p>
+                    Embarking on a journey into the world of software
+                    development can be both exciting and daunting. Whether
+                    you're a coding novice or someone looking to switch
+                    careers, this article is your compass for navigating the
+                    vast landscape of software development. Here, I have
+                    outlined indispensable advice to help you chart your
+                    course and set sail on your coding adventure.
+                  </p>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="copyright">
-          &copy; <span id="currentYear"></span>. Developed with
-          <span class="heart">&hearts;</span> by yours truly!
+        <div class="section-link scroll-in">
+          <a href="https://medium.com/@djmrjay" target="_blank" rel="noopener" class="link-btn">View All Articles</a>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
 
-  <div id="cursor-circle" class="circle"></div>
+    <section id="contacts">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Contacts</h2>
+          <p class="section-subtitle">
+            If you have an application you are interested in developing, a
+            brand that you need designed, or a project that needs coding, I’d
+            love to help with it. Leave a message below and I will promptly
+            get in touch.
+          </p>
+        </div>
 
-  <script src="./js/index.js"></script>
-  <script src="./js/landing-page.js"></script>
-  <script src="./js/kinet.js"></script>
+        <div class="form-container">
+          <form action="https://formspree.io/f/xrgjwepv" method="post" onsubmit="return validationForm()" name="form">
+            <div class="name-email-inputs">
+              <input type="text" id="fname" name="fullname" placeholder="Your name?" maxlength="30"
+                oninput="capitalizeEachWord(this)" />
+              <input type="email" id="email" name="email" placeholder="Your email address?" />
+            </div>
+            <textarea id="msg" name="message" placeholder="Write your message here" maxlength="500"></textarea>
+            <input class="link-btn" type="submit" value="Send Message" />
+          </form>
+
+          <div class="error">
+            <div id="nameError"></div>
+            <div id="emailError"></div>
+            <div id="messageError"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="index-footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/jonah-wambua/" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/DJ-MrJay" target="_blank" rel="noopener" title="Github">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://twitter.com/jonah_wambua" target="_blank" rel="noopener" title="Twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://medium.com/@djmrjay" target="_blank" rel="noopener" title="Medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; <span id="currentYear"></span>. Developed with
+        <span class="heart">&hearts;</span> by yours truly!
+      </div>
+    </div>
+  </footer>
+</body>
+
+<div id="cursor-circle" class="circle"></div>
+
+<script src="./js/index.js"></script>
+<script src="./js/landing-page.js"></script>
+<script src="./js/kinet.js"></script>
+
 </html>
