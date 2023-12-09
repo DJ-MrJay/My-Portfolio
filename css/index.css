@@ -11,7 +11,7 @@ header::before {
   bottom: 0;
   left: 0;
   background-image: url("../images/mugshot.png");
-  background-size: 55vw;
+  background-size: 50vw;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -79,12 +79,12 @@ header .header-text {
   position: relative;
 }
 
-.highlight {
+/* .highlight {
   position: relative;
 }
 
-.highlight:before {
-  content: " ";
+.highlight::before {
+  content: "";
   display: block;
   height: 90%;
   width: 100%;
@@ -96,7 +96,7 @@ header .header-text {
   top: 1px;
   left: 1px;
   z-index: -1;
-}
+} */
 
 .scroll-button {
   position: absolute;
@@ -454,6 +454,20 @@ footer.index-footer {
   header h2 {
     font-size: 1.5rem;
   }
+  /* .highlight::before {
+    content: "";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: rgb(128, 77, 128);
+    transform: rotate(-2deg);
+    top: 1px;
+    left: 1px;
+    z-index: -1;
+  } */
 }
 
 @media screen and (min-width: 721px) {
@@ -504,9 +518,17 @@ footer.index-footer {
     font-size: 1.25rem;
   }
 
-  header::before {
-    background-size: 75vw;
+  .header-container {
+    width: 75%;
   }
+
+  .header::before {
+    background-position: center bottom;
+  }
+
+  /* .highlight:before {
+    display: none;
+  } */
 
   nav img {
     height: 16px;
