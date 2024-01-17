@@ -437,9 +437,6 @@ form .link-btn {
 footer {
   padding-top: 2rem;
   border-top: 1px solid var(--shade-100);
-}
-
-footer.index-footer {
   background-color: var(--background-color);
 }
 
