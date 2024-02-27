@@ -96,21 +96,22 @@ summary .subsection-title {
 .tags {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .bounding-box {
   width: 85px;
-  height: 45px;
+  height: 50px;
   background-color: var(--shade-100);
   border-radius: 0.4rem;
   padding: 0.4rem;
   margin-top: 1rem;
-  margin-right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-in-bottom 0.5s ease-in-out 150ms both;
 }
 
 .bounding-box img {
@@ -131,7 +132,7 @@ footer {
   nav img {
     height: 16px;
   }
-  
+
   .intro-container {
     flex-direction: column-reverse;
   }
