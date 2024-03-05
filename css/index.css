@@ -80,7 +80,7 @@ header .header-text {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, var(--text-color), var(--shade-300));
+  background: linear-gradient(to right, var(--text-color), var(--shade-300), var(--shade-500));
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block; /* Ensure the gradient only applies to the text width */
