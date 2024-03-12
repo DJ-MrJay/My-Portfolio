@@ -1,6 +1,7 @@
 header {
   position: relative;
   height: 100vh;
+  height: 100svh;
 }
 
 header::before {
@@ -17,7 +18,7 @@ header::before {
 }
 
 header.js-fixed {
-  height: 110vh;
+  height: 113vh;
 }
 
 .header-container {
@@ -58,6 +59,7 @@ header h2 {
 header .fixed-header {
   position: absolute;
   height: 100vh;
+  height: 100svh;
   width: 100%;
   top: 0;
   left: 0;
@@ -80,7 +82,12 @@ header .header-text {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, var(--text-color), var(--shade-300), var(--shade-500));
+  background: linear-gradient(
+    to right,
+    var(--text-color),
+    var(--shade-300),
+    var(--shade-500)
+  );
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block; /* Ensure the gradient only applies to the text width */
@@ -112,6 +119,7 @@ header .header-text {
 
 nav {
   border-bottom: 1px solid var(--shade-100);
+  scroll-snap-type: y mandatory;
 }
 
 section:nth-of-type(even) {
