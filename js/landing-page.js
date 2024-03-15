@@ -8,20 +8,20 @@ const scrollElements = document.querySelectorAll(".scroll-in");
 const projects = document.querySelectorAll(".project");
 
 header.classList.add("js-fixed");
-scrollElements.forEach((el) => {
-  el.classList.add("js-opacity");
+scrollElements.forEach((element) => {
+  element.classList.add("js-opacity");
 });
 
-const elementInViewport = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
+const elementInViewport = (element, dividend = 1) => {
+  const elementTop = element.getBoundingClientRect().top;
   return (
     elementTop <=
     (window.innerHeight || document.documentElement.clientHeight) / dividend
   );
 };
 
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
+const elementOutofView = (element) => {
+  const elementTop = element.getBoundingClientRect().top;
   return (
     elementTop > (window.innerHeight || document.documentElement.clientHeight)
   );
@@ -55,21 +55,21 @@ const hideScrollElement = (element) => {
 };
 
 const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInViewport(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el);
+  scrollElements.forEach((element) => {
+    if (elementInViewport(element, 1.25)) {
+      displayScrollElement(element);
+    } else if (elementOutofView(element)) {
+      hideScrollElement(element);
     }
   });
 };
 
-projects.forEach((el) => {
-  el.addEventListener("click", () => {
-    if (el.classList.contains("active")) {
-      el.classList.remove("active");
+projects.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (element.classList.contains("active")) {
+      element.classList.remove("active");
     } else {
-      el.classList.add("active");
+      element.classList.add("active");
     }
   });
 });
