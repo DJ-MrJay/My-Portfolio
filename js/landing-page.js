@@ -7,6 +7,8 @@ const topOfMain = main.getBoundingClientRect().top;
 const scrollElements = document.querySelectorAll(".scroll-in");
 const projects = document.querySelectorAll(".project");
 
+document.body.classList.add("lock-scroll"); // Lock scrolling on load
+
 header.classList.add("js-fixed");
 scrollElements.forEach((element) => {
   element.classList.add("js-opacity");
@@ -86,8 +88,22 @@ const throttle = (callback, time) => {
   }, time);
 };
 
+// scrollButton.addEventListener("click", function () {
+//   document.body.classList.remove("lock-scroll"); // Unlock scrolling
+//   window.scrollTo({ top: nav.offsetTop, behavior: "smooth" });
+
+//   // Hide header after scrolling
+//   header.classList.add("hidden-header");
+// });
+
 scrollButton.addEventListener("click", function () {
-  window.scroll({ top: topOfMain, behavior: "smooth" });
+  document.body.classList.remove("lock-scroll");
+
+  const adjustedOffset = main.offsetTop - 700;
+
+  window.scrollTo({ top: adjustedOffset, behavior: "smooth" });
+
+  header.classList.add("hidden-header");
 });
 
 const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");

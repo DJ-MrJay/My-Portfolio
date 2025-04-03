@@ -82,7 +82,24 @@ const isScrollingDown = () => {
   return isScrollDown;
 };
 
+// const handleNavScroll = () => {
+//   if (mainNav.classList.contains("visible")) {
+//     if (isScrollingDown()) {
+//       mainNav.classList.add("scroll-down");
+//       mainNav.classList.remove("scroll-up");
+//     } else {
+//       mainNav.classList.add("scroll-up");
+//       mainNav.classList.remove("scroll-down");
+//     }
+//   } else {
+//     mainNav.classList.remove("scroll-up");
+//     mainNav.classList.remove("scroll-down");
+//   }
+// };
+
 const handleNavScroll = () => {
+  if (header.classList.contains("hidden-header")) return; // Stop interfering if header is hidden
+
   if (mainNav.classList.contains("visible")) {
     if (isScrollingDown()) {
       mainNav.classList.add("scroll-down");
@@ -151,7 +168,7 @@ function errorMessage(elemId, requiredMessage) {
 function capitalizeEachWord(element) {
   // Capitalize the first letter of each word in the input value
   element.value = element.value.replace(/\b\w/g, function (char) {
-      return char.toUpperCase();
+    return char.toUpperCase();
   });
 }
 

@@ -1,7 +1,6 @@
 header {
   position: relative;
   height: 100vh;
-  height: 100svh;
 }
 
 header::before {
@@ -12,7 +11,7 @@ header::before {
   bottom: 0;
   left: 0;
   background-image: url("../images/mugshot.png");
-  background-size: 50vw;
+  background-size: 45vw;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -59,7 +58,6 @@ header h2 {
 header .fixed-header {
   position: absolute;
   height: 100vh;
-  height: 100svh;
   width: 100%;
   top: 0;
   left: 0;
@@ -81,6 +79,10 @@ header .header-text {
   position: relative;
 }
 
+.hidden-header {
+  display: none;  
+}
+
 .text-gradient {
   background: linear-gradient(
     to right,
@@ -89,8 +91,10 @@ header .header-text {
     var(--shade-500)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
-  display: inline-block; /* Ensure the gradient only applies to the text width */
+  display: inline-block;
+  /* Ensure the gradient only applies to the text width */
 }
 
 .scroll-button {
@@ -110,12 +114,13 @@ header .header-text {
 
 .scroll-button .arrow {
   margin-left: 0.25rem;
-}
-
-.scroll-button:hover .arrow,
-.scroll-button:focus .arrow {
   animation: bounce-top 1.5s ease-in-out infinite both;
 }
+
+/* .scroll-button:hover .arrow,
+.scroll-button:focus .arrow {
+  animation: bounce-top 1.5s ease-in-out infinite both;
+} */
 
 nav {
   border-bottom: 1px solid var(--shade-100);
@@ -440,13 +445,16 @@ footer {
   header .fixed-header:before {
     height: 51%;
   }
+
   header h1 p {
     font-size: 3rem;
     line-height: 120%;
   }
+
   header h2 {
     font-size: 1.5rem;
   }
+
   /* .highlight::before {
     content: "";
     display: block;
