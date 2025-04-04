@@ -22,7 +22,7 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
-body.lock-scroll {
+body.index.lock-scroll {
   overflow: hidden;
 }
 

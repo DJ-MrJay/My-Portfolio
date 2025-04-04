@@ -106,6 +106,12 @@ scrollButton.addEventListener("click", function () {
   header.classList.add("hidden-header");
 });
 
+const readMoreButton = document.querySelector("#read-more"); // Select Read More button
+
+readMoreButton.addEventListener("click", function (event) {
+  document.body.classList.remove("lock-scroll"); // Unlock scrolling
+});
+
 const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 window.addEventListener("scroll", () => {
