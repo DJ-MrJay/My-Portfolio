@@ -1,7 +1,7 @@
 :root,
 :root.light {
   --background-color: #fafafa;
-  --text-color: #0d1926;
+  --text-color: #111111;
   --shade-100: #efefef;
   --shade-300: #8a8a8a;
   --shade-500: #3d3d3d;
@@ -21,9 +21,9 @@
 }
 
 :root.dark {
-  --background-color: #0d1926;
+  --background-color: #111111;
   --text-color: #f7fafc;
-  --shade-100: #1a324c;
+  --shade-100: #222222;
   --shade-300: #4383cb;
   --shade-500: #8cb0d9;
   --secondary-color: #a67a59;
