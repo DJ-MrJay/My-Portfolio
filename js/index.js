@@ -1,5 +1,5 @@
-const root = document.querySelector("html");
-const body = document.querySelector("body");
+const root = document.documentElement;
+const body = document.body;
 const mainNav = document.querySelector("nav");
 const menu = document.querySelector(".nav-links");
 const menuButton = document.getElementById("menu-display");
@@ -9,54 +9,47 @@ const themeSelectors = document.getElementsByClassName("theme-select");
 
 mainNav.classList.add("js-nav");
 
+// Theme logic
 const getTheme = () => {
   const theme = localStorage.getItem("theme");
-  theme && setActiveSelector(theme);
+  if (theme) {
+    root.className = theme;
+    setActiveSelector(theme);
+    updateThemeColor();
+  }
+};
+
+const setTheme = (theme) => {
   root.className = theme;
-  const shade = getComputedStyle(document.documentElement).getPropertyValue(
-    "--shade-100"
-  );
-  document
-    .querySelector('meta[name="theme-color"]')
-    .setAttribute("content", shade);
+  localStorage.setItem("theme", theme);
+  setActiveSelector(theme);
+  updateThemeColor();
 };
 
-const setTheme = (className) => {
-  var root = document.getElementsByTagName("html")[0];
-  root.className = className;
-  localStorage.setItem("theme", className);
-  const shade = getComputedStyle(document.documentElement).getPropertyValue(
-    "--shade-100"
-  );
-  document
-    .querySelector('meta[name="theme-color"]')
-    .setAttribute("content", shade);
-  setActiveSelector(className);
-};
-
-const setActiveSelector = (className) => {
-  var selectedTheme = document.getElementById(`${className}-select`);
-  [...themeSelectors].forEach((item) => {
-    item.classList.remove("active");
-  });
-  selectedTheme.classList.add("active");
+const setActiveSelector = (theme) => {
+  [...themeSelectors].forEach((item) => item.classList.remove("active"));
+  const selected = document.getElementById(`${theme}-select`);
+  if (selected) selected.classList.add("active");
   hideThemeContainer();
+};
+
+const updateThemeColor = () => {
+  const shade = getComputedStyle(root).getPropertyValue("--shade-100");
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) metaTheme.setAttribute("content", shade);
 };
 
 const showThemeContainer = () => {
   themeContainer.classList.add("visible");
-  [...themeSelectors].forEach((item) => {
-    item.tabIndex = 0;
-  });
+  [...themeSelectors].forEach((item) => (item.tabIndex = 0));
 };
 
 const hideThemeContainer = () => {
   themeContainer.classList.remove("visible");
-  [...themeSelectors].forEach((item) => {
-    item.tabIndex = -1;
-  });
+  [...themeSelectors].forEach((item) => (item.tabIndex = -1));
 };
 
+// Menu
 const showMenu = () => {
   menu.classList.add("visible");
   menuButton.classList.add("active");
@@ -67,39 +60,16 @@ const hideMenu = () => {
   menuButton.classList.remove("active");
 };
 
+// Scroll detection
 let previousScrollPosition = 0;
-
 const isScrollingDown = () => {
-  let scrolledPosition = window.scrollY;
-  let isScrollDown;
-
-  if (scrolledPosition > previousScrollPosition) {
-    isScrollDown = true;
-  } else {
-    isScrollDown = false;
-  }
-  previousScrollPosition = scrolledPosition;
-  return isScrollDown;
+  const current = window.scrollY;
+  const down = current > previousScrollPosition;
+  previousScrollPosition = current;
+  return down;
 };
 
-// const handleNavScroll = () => {
-//   if (mainNav.classList.contains("visible")) {
-//     if (isScrollingDown()) {
-//       mainNav.classList.add("scroll-down");
-//       mainNav.classList.remove("scroll-up");
-//     } else {
-//       mainNav.classList.add("scroll-up");
-//       mainNav.classList.remove("scroll-down");
-//     }
-//   } else {
-//     mainNav.classList.remove("scroll-up");
-//     mainNav.classList.remove("scroll-down");
-//   }
-// };
-
 const handleNavScroll = () => {
-  if (header.classList.contains("hidden-header")) return; // Stop interfering if header is hidden
-
   if (mainNav.classList.contains("visible")) {
     if (isScrollingDown()) {
       mainNav.classList.add("scroll-down");
@@ -109,139 +79,110 @@ const handleNavScroll = () => {
       mainNav.classList.remove("scroll-down");
     }
   } else {
-    mainNav.classList.remove("scroll-up");
-    mainNav.classList.remove("scroll-down");
+    mainNav.classList.remove("scroll-up", "scroll-down");
   }
 };
 
+// Event bindings
 getTheme();
 
-themeDisplay.addEventListener("click", function () {
+themeDisplay?.addEventListener("click", () => {
   hideMenu();
-  if (themeContainer.classList.contains("visible")) {
-    hideThemeContainer();
-  } else {
-    showThemeContainer();
-  }
+  themeContainer.classList.contains("visible")
+    ? hideThemeContainer()
+    : showThemeContainer();
 });
 
-menuButton.addEventListener("click", function () {
+menuButton?.addEventListener("click", () => {
   hideThemeContainer();
-  if (menu.classList.contains("visible")) {
-    hideMenu();
-  } else {
-    showMenu();
-  }
+  menu.classList.contains("visible") ? hideMenu() : showMenu();
 });
 
-menu.addEventListener("click", function () {
+menu?.addEventListener("click", () => {
   hideThemeContainer();
   hideMenu();
 });
 
-window.addEventListener("scroll", () => {
-  handleNavScroll();
-});
+window.addEventListener("scroll", handleNavScroll);
 
-// Get all elements with the class "work-tags"
+// Tag list dots
 const tagLists = document.getElementsByClassName("work-tags");
-
-// Loop through each tag list
-for (let j = 0; j < tagLists.length; j++) {
-  const tags = tagLists[j].getElementsByClassName("tag");
-  const numTags = tags.length;
-
-  // Loop through the tags in reverse order and insert dots
-  for (let i = numTags - 1; i > 0; i--) {
+for (let list of tagLists) {
+  const tags = list.getElementsByClassName("tag");
+  for (let i = tags.length - 1; i > 0; i--) {
     const dot = document.createElement("li");
     dot.className = "tag";
     dot.innerHTML = "&#x2022;";
-    tagLists[j].insertBefore(dot, tags[i]);
+    list.insertBefore(dot, tags[i]);
   }
 }
 
-// Form Validation
-function errorMessage(elemId, requiredMessage) {
-  document.getElementById(elemId).innerHTML = requiredMessage;
-}
-
-function capitalizeEachWord(element) {
-  // Capitalize the first letter of each word in the input value
-  element.value = element.value.replace(/\b\w/g, function (char) {
-    return char.toUpperCase();
-  });
-}
-
-function validationForm() {
-  const fullname = document.form.fullname.value;
-  const email = document.form.email.value;
-  const message = document.form.message.value;
-
-  let nameError = true;
-  let emailError = true;
-  let messageError = true;
-
-  if (fullname === "") {
-    errorMessage("nameError", "*Please enter your full name");
-  } else {
-    const nameRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
-    if (!nameRegex.test(fullname)) {
-      errorMessage("nameError", "*Please enter first and last names");
-    } else {
-      errorMessage("nameError", "");
-      nameError = false;
-    }
-  }
-
-  if (email === "") {
-    errorMessage("emailError", "*Please enter your email address");
-  } else {
-    const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
-    if (!emailRegex.test(email)) {
-      errorMessage("emailError", "*Email address MUST be in lower case.");
-    } else {
-      errorMessage("emailError", "");
-      emailError = false;
-    }
-  }
-
-  if (message === "") {
-    errorMessage("messageError", "*Please type a message");
-  } else {
-    const messageRegex = /[\s\S]+/g;
-    if (!messageRegex.test(message)) {
-      errorMessage("messageError", "*Please type a valid message");
-    } else {
-      errorMessage("messageError", "");
-      messageError = false;
-    }
-  }
-
-  if (nameError || emailError || messageError === true) {
-    return false;
-  }
-}
-
-// Store Form Data Locally
-
-const form = document.querySelector("form");
-const userData = {
-  name: document.getElementById("fname").value,
-  email: document.getElementById("email").value,
-  message: document.getElementById("msg").value,
+// Form validation
+const errorMessage = (id, message) => {
+  const elem = document.getElementById(id);
+  if (elem) elem.innerHTML = message;
 };
 
-localStorage.setItem("userData", JSON.stringify(userData));
-form.reset();
+const capitalizeEachWord = (input) => {
+  input.value = input.value.replace(/\b\w/g, (char) => char.toUpperCase());
+};
 
-// Retrieve Form Data
-if (localStorage.getItem("userData") !== undefined) {
-  const userData = JSON.parse(localStorage.getItem("userData"));
+const validationForm = () => {
+  const { fullname, email, message } = document.form;
+  let nameErr = true,
+    emailErr = true,
+    msgErr = true;
 
-  form.elements.fullname.value = userData.name;
-  form.elements.email.value = userData.email;
-  form.elements.message.value = userData.message;
+  if (!fullname.value.trim()) {
+    errorMessage("nameError", "*Please enter your full name");
+  } else if (!/^[a-zA-Z]+ [a-zA-Z]+$/.test(fullname.value)) {
+    errorMessage("nameError", "*Please enter first and last names");
+  } else {
+    errorMessage("nameError", "");
+    nameErr = false;
+  }
+
+  if (!email.value.trim()) {
+    errorMessage("emailError", "*Please enter your email address");
+  } else if (!/^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/.test(email.value)) {
+    errorMessage("emailError", "*Email address MUST be in lower case.");
+  } else {
+    errorMessage("emailError", "");
+    emailErr = false;
+  }
+
+  if (!message.value.trim()) {
+    errorMessage("messageError", "*Please type a message");
+  } else {
+    errorMessage("messageError", "");
+    msgErr = false;
+  }
+
+  return !(nameErr || emailErr || msgErr);
+};
+
+// Store form data locally
+const form = document.querySelector("form");
+if (form) {
+  const userData = {
+    name: document.getElementById("fname")?.value || "",
+    email: document.getElementById("email")?.value || "",
+    message: document.getElementById("msg")?.value || "",
+  };
+
+  localStorage.setItem("userData", JSON.stringify(userData));
+  form.reset();
+
+  // Populate form if stored data exists
+  const saved = localStorage.getItem("userData");
+  if (saved) {
+    const { name, email, message } = JSON.parse(saved);
+    form.elements.fullname.value = name;
+    form.elements.email.value = email;
+    form.elements.message.value = message;
+  }
 }
 
-// Set the current year
-document.getElementById("currentYear").textContent = new Date().getFullYear();
+// Footer: set current year
+const yearElem = document.getElementById("currentYear");
+if (yearElem) yearElem.textContent = new Date().getFullYear();
